@@ -1,389 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Magnifica Humanitas — Clean Summary</title>
-  <style>
-    :root {
-      --bg: #f7f4ef;
-      --paper: #fffdf8;
-      --ink: #1f2933;
-      --muted: #65717e;
-      --accent: #8b5e34;
-      --accent-soft: #efe3d2;
-      --blue: #243b53;
-      --line: #dfd6c8;
-      --green: #3f6f57;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.65;
-    }
-    .wrap {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 32px 18px 60px;
-    }
-    header {
-      background: linear-gradient(135deg, #2f3f50, #7c5736);
-      color: white;
-      padding: 42px 32px;
-      border-radius: 24px;
-      box-shadow: 0 18px 50px rgba(31, 41, 51, 0.18);
-    }
-    header .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      font-size: 0.78rem;
-      opacity: 0.85;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: clamp(2rem, 4vw, 3.5rem);
-      line-height: 1.05;
-      margin: 0 0 14px;
-    }
-    header p {
-      max-width: 820px;
-      margin: 0;
-      font-size: 1.08rem;
-      opacity: 0.95;
-    }
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
-    .pill {
-      border: 1px solid rgba(255,255,255,0.35);
-      background: rgba(255,255,255,0.13);
-      color: white;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-    }
-    nav {
-      margin: 22px 0;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px 20px;
-    }
-    nav strong { color: var(--blue); }
-    nav a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 14px;
-      white-space: nowrap;
-      font-weight: 600;
-    }
-    nav a:hover { text-decoration: underline; }
-    section {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 26px;
-      margin: 22px 0;
-    }
-    h2 {
-      margin: 0 0 14px;
-      color: var(--blue);
-      font-size: 1.55rem;
-      line-height: 1.2;
-    }
-    h3 {
-      color: var(--accent);
-      margin: 22px 0 8px;
-      font-size: 1.05rem;
-    }
-    .lead {
-      font-size: 1.08rem;
-      color: #364452;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 14px;
-    }
-    .card {
-      background: #fbf7f0;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px;
-    }
-    .card h3 { margin-top: 0; }
-    ul, ol { padding-left: 1.25rem; }
-    li { margin: 8px 0; }
-    .quote {
-      border-left: 5px solid var(--accent);
-      background: var(--accent-soft);
-      padding: 16px 18px;
-      border-radius: 0 14px 14px 0;
-      margin: 16px 0;
-      color: #3c332a;
-      font-weight: 600;
-    }
-    .highlight-list li::marker { color: var(--accent); }
-    .chapter {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 18px;
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
-      margin-top: 18px;
-    }
-    .chapter:first-of-type { border-top: 0; padding-top: 0; }
-    .num {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--blue);
-      color: white;
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-    .takeaway {
-      background: #eef6f1;
-      border-color: #cfe2d6;
-    }
-    .takeaway h2, .takeaway h3 { color: var(--green); }
-    .small {
-      font-size: 0.92rem;
-      color: var(--muted);
-    }
-    footer {
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-align: center;
-      margin-top: 28px;
-    }
-    a { color: var(--accent); }
-    @media (max-width: 640px) {
-      header, section { padding: 22px; }
-      .chapter { grid-template-columns: 1fr; }
-      .num { width: 48px; height: 48px; }
-    }
-    @media print {
-      body { background: white; }
-      .wrap { max-width: none; padding: 0; }
-      header, section, nav { box-shadow: none; break-inside: avoid; }
-      nav { display: none; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ikechukwu Chukwudi: NHS cardiology registrar, clinical AI builder and medical LLM reviewer. Public case studies of Clinote and the Cardiology Research Digest.">
+<meta name="theme-color" content="#16332d">
+<title>Ikechukwu Chukwudi | Clinical AI &amp; Selected Work</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="eyebrow">Clean reading summary</div>
-      <h1>Magnifica Humanitas</h1>
-      <p><strong>Encyclical Letter of Pope Leo XIV on safeguarding the human person in the time of artificial intelligence.</strong> This summary captures the main argument, chapter-by-chapter highlights, and practical takeaways in plain English.</p>
-      <div class="meta">
-        <span class="pill">Published: 15 May 2026</span>
-        <span class="pill">Theme: AI, human dignity, common good</span>
-        <span class="pill">Core image: Babel vs Jerusalem</span>
-      </div>
-    </header>
-
-    <nav>
-      <strong>Jump to:</strong>
-      <a href="#one-page">One-page summary</a>
-      <a href="#themes">Major themes</a>
-      <a href="#chapters">Chapter guide</a>
-      <a href="#ai">AI highlights</a>
-      <a href="#takeaways">Practical takeaways</a>
-    </nav>
-
-    <section id="one-page">
-      <h2>One-page summary</h2>
-      <p class="lead"><em>Magnifica Humanitas</em> argues that AI and modern technology are not automatically evil, but they are never neutral. They carry the values of those who design, finance, govern, and use them. The central question is therefore not simply whether humanity should accept or reject technology, but what kind of world we are building with it.</p>
-      <div class="quote">The encyclical frames the choice as either building another Tower of Babel, marked by domination, uniformity, profit, and dehumanisation, or rebuilding Jerusalem, marked by shared responsibility, dialogue, dignity, justice, and communion.</div>
-      <p>The Pope places AI within the wider tradition of Catholic Social Doctrine. He uses established principles such as human dignity, the common good, universal destination of goods, subsidiarity, solidarity, and social justice to assess the digital age. He warns against a technocratic mindset where efficiency, control, and profit become the main measures of value.</p>
-      <p>The document calls for AI governance that is transparent, accountable, politically supervised, ethically grounded, and open to public participation. It also insists that work must remain dignified, education must form judgment rather than passive dependence, truth must be protected as a common good, and lethal decisions in war must never be delegated to machines.</p>
-    </section>
-
-    <section id="themes">
-      <h2>Major themes and highlights</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>1. Human dignity comes first</h3>
-          <p>Every technological system must be judged by whether it protects the person, especially the poor, the vulnerable, the excluded, migrants, workers, children, and victims of violence.</p>
-        </div>
-        <div class="card">
-          <h3>2. Technology is powerful but ambiguous</h3>
-          <p>Technology can heal, connect, educate, and protect. It can also divide, manipulate, exploit, and deepen inequality when driven by profit or control.</p>
-        </div>
-        <div class="card">
-          <h3>3. AI is not morally neutral</h3>
-          <p>AI systems embody choices about what to measure, ignore, optimise, classify, and prioritise. Their design can reinforce bias or exclusion even when presented as objective.</p>
-        </div>
-        <div class="card">
-          <h3>4. Power must be accountable</h3>
-          <p>Digital power is often held by private, transnational actors with more influence than many governments. The Pope calls for legal frameworks, independent oversight, and political responsibility.</p>
-        </div>
-        <div class="card">
-          <h3>5. Truth is a public good</h3>
-          <p>AI can amplify disinformation and blur the boundary between fact and opinion. Democracy depends on truth-seeking, verification, trust, and responsible communication.</p>
-        </div>
-        <div class="card">
-          <h3>6. Work must not be reduced to productivity</h3>
-          <p>Automation should support human work, not de-skill workers, intensify surveillance, or treat people as disposable costs in the pursuit of profit.</p>
-        </div>
-        <div class="card">
-          <h3>7. Education must form judgment</h3>
-          <p>Schools should not merely chase the pace of digital change. They should teach discernment, attention, relationships, responsibility, moderation, and love of truth.</p>
-        </div>
-        <div class="card">
-          <h3>8. War must not become automated</h3>
-          <p>The encyclical strongly rejects delegating lethal or irreversible decisions to opaque automated systems. Human responsibility must remain clear and accountable.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="chapters">
-      <h2>Chapter-by-chapter guide</h2>
-
-      <div class="chapter">
-        <div class="num">Intro</div>
-        <div>
-          <h3>The new question of our time</h3>
-          <p>The introduction presents AI and digital transformation as the “new things” of this age. The Pope uses two biblical images: Babel, a project of power without God and without true communion; and Jerusalem, rebuilt through prayer, shared responsibility, listening, and cooperation.</p>
-          <ul class="highlight-list">
-            <li>Technology must be directed toward the common good.</li>
-            <li>The weak and excluded must not become “rejected stones.”</li>
-            <li>The real task is to remain profoundly human in an age of machines.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="chapter">
-        <div class="num">1</div>
-        <div>
-          <h3>A dynamic Social Doctrine faithful to the Gospel</h3>
-          <p>This chapter explains why the Church speaks about society, economics, politics, and technology. Catholic Social Doctrine is presented as a living tradition, not a fixed set of slogans. It develops as history changes while remaining rooted in Scripture, Tradition, and the Gospel.</p>
-          <ul class="highlight-list">
-            <li>The Church walks with humanity rather than standing outside history.</li>
-            <li>AI is not just another topic; it challenges how Social Doctrine is applied today.</li>
-            <li>Dialogue with science and human experience is part of the Church’s mission.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="chapter">
-        <div class="num">2</div>
-        <div>
-          <h3>Foundations and principles</h3>
-          <p>This chapter sets out the basic principles used throughout the encyclical: the person as made in the image of God, equal dignity, human rights, the common good, universal destination of goods, subsidiarity, solidarity, social justice, and integral human development.</p>
-          <ul class="highlight-list">
-            <li>The common good is more than individual benefit added together.</li>
-            <li>Subsidiarity means local persons and communities should not be replaced by distant powers.</li>
-            <li>Solidarity includes responsibility for digital and information infrastructures.</li>
-            <li>The Church must also examine its own structures for transparency, justice, and abuse of power.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="chapter">
-        <div class="num">3</div>
-        <div>
-          <h3>Technology, dominance, and the promises of AI</h3>
-          <p>This is the central AI chapter. It warns that a technocratic paradigm can make efficiency, control, and profit the measure of all things. AI is recognised as useful, but also risky because it can centralise power, encourage dependence, simulate human care, reinforce bias, and affect rights and opportunities.</p>
-          <ul class="highlight-list">
-            <li>AI should be guided by human intelligence, conscience, and freedom.</li>
-            <li>Important decisions about work, credit, public services, reputation, or rights should not be delegated to opaque systems.</li>
-            <li>Accountability must be traceable from design to deployment to use.</li>
-            <li>A “more moral AI” is not enough if only a few powerful actors define the morality.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="chapter">
-        <div class="num">4</div>
-        <div>
-          <h3>Truth, work, and freedom</h3>
-          <p>This chapter applies the argument to daily life. It warns that AI can accelerate disinformation, weaken democratic life, reshape education, and transform work. The Pope argues that digital systems must protect truth, support dignified labour, and avoid new forms of dependence or social control.</p>
-          <ul class="highlight-list">
-            <li>Truth is a common good, not just a private opinion.</li>
-            <li>Schools must teach discernment, not just information consumption.</li>
-            <li>Work is part of human dignity and must not be sacrificed to profit.</li>
-            <li>Automation should serve workers rather than forcing workers to serve machines.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="chapter">
-        <div class="num">5</div>
-        <div>
-          <h3>The culture of power and the civilization of love</h3>
-          <p>The final chapter broadens the discussion to war, politics, multilateralism, and peace. It criticises a culture that normalises war, arms races, deterrence, disinformation, and domination. It particularly warns against AI-enabled weapons and the removal of human responsibility from lethal decisions.</p>
-          <ul class="highlight-list">
-            <li>No algorithm can make war morally acceptable.</li>
-            <li>Lethal force must remain under effective, responsible human control.</li>
-            <li>Peace is not naïve; it is the fruit of justice, charity, diplomacy, and dialogue.</li>
-            <li>Everyone has a section of the wall to rebuild, even if their influence seems small.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="ai">
-      <h2>AI-specific points worth highlighting</h2>
-      <ol>
-        <li><strong>AI can be useful, but it must remain a tool.</strong> The document accepts that AI can improve services, support analysis, and assist human activity, but it must not replace human conscience or responsibility.</li>
-        <li><strong>AI can create false objectivity.</strong> Automated outputs can look neutral while carrying assumptions, stereotypes, and priorities from their designers and training data.</li>
-        <li><strong>AI affects real rights and opportunities.</strong> Decisions about employment, credit, public services, reputation, and access can exclude people when delegated to systems without compassion or appeal.</li>
-        <li><strong>AI governance must be political, not just technical.</strong> The encyclical asks for robust law, independent oversight, informed users, public debate, and accountability.</li>
-        <li><strong>AI has environmental costs.</strong> Large systems use energy, water, data centres, and infrastructure, so sustainability is part of ethical assessment.</li>
-        <li><strong>AI can distort human relationships.</strong> Simulated empathy or companionship may help in limited ways, but it can also weaken the desire for genuine human connection.</li>
-        <li><strong>AI in warfare requires the strictest limits.</strong> Lethal or irreversible decisions must not be handed to opaque automated processes.</li>
-      </ol>
-    </section>
-
-    <section id="takeaways" class="takeaway">
-      <h2>Practical takeaways</h2>
-      <div class="grid">
-        <div class="card takeaway">
-          <h3>For policymakers</h3>
-          <p>Do not leave AI governance to market forces alone. Require transparency, appeal mechanisms, human accountability, independent oversight, and protections for vulnerable groups.</p>
-        </div>
-        <div class="card takeaway">
-          <h3>For technologists</h3>
-          <p>Design systems around human dignity, not only speed, scale, efficiency, or profit. Ask what assumptions are built into the data, model, interface, and deployment.</p>
-        </div>
-        <div class="card takeaway">
-          <h3>For educators</h3>
-          <p>Teach students to use technology critically and creatively. Protect time for reading, reflection, silence, discussion, and deep learning.</p>
-        </div>
-        <div class="card takeaway">
-          <h3>For employers</h3>
-          <p>Use automation to support workers, reduce dangerous tasks, and improve dignity, not to intensify surveillance, de-skill people, or make jobs disposable.</p>
-        </div>
-        <div class="card takeaway">
-          <h3>For ordinary users</h3>
-          <p>Use AI with discernment. Check sources, avoid over-reliance, protect real relationships, and remember that convenience is not the same as wisdom.</p>
-        </div>
-        <div class="card takeaway">
-          <h3>For faith communities</h3>
-          <p>Model dialogue, solidarity, truthfulness, care for the excluded, and shared responsibility. Be builders of communion rather than architects of Babel.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Best short description</h2>
-      <p><em>Magnifica Humanitas</em> is a Christian social teaching response to the AI age. Its message is that technological progress must be judged by whether it protects human dignity, strengthens the common good, preserves truth and freedom, supports dignified work, and builds peace. AI can serve humanity, but only if humanity refuses to surrender conscience, responsibility, and love to the logic of power, profit, and automation.</p>
-    </section>
-
-    <footer>
-      <p>Summary prepared from the official Vatican English text: <a href="http://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Magnifica Humanitas</a>. This is a paraphrased study aid, not an official Vatican summary.</p>
-    </footer>
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<nav aria-label="Main navigation">
+<a class="brand" href="#main">Ikechukwu Chukwudi</a>
+<div class="navlinks"><a href="#work">Selected work</a><a href="#background">Background</a><a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">LinkedIn ↗</a></div>
+</nav>
+<main id="main">
+<header class="hero">
+<p class="eyebrow">Clinician · Builder · Researcher</p>
+<h1>Clinical experience.<br>Working AI products.</h1>
+<p class="lead">I’m an NHS cardiology registrar building software around real clinical workflows, with experience in medical LLM review and cardiovascular research.</p>
+<p class="credentials">Ikechukwu Chukwudi · MB;BS, MRCP(UK) · United Kingdom</p>
+<div class="actions"><a class="button" href="#work">Explore my work</a><a class="button secondary" href="https://github.com/realikechukwu/about">View GitHub case studies ↗</a></div>
+</header>
+<section id="work" aria-labelledby="work-title">
+<div class="section-top"><h2 id="work-title">Selected work</h2><span class="small">Reported totals · 1 October 2026</span></div>
+<div class="grid">
+<article class="card">
+<p class="label">01 / CLINICAL WORKFLOW</p>
+<h3>Clinote</h3>
+<p>An AI-assisted professional logbook. I built the application end to end, from the interface and backend to the model integration.</p>
+<div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI API</span></div>
+<div class="metric">50 <span>users</span></div>
+<p class="small">Total users; active and paying users are not claimed.</p>
+<a href="#clinote">Explore Clinote →</a>
+</article>
+<article class="card">
+<p class="label">02 / LITERATURE &amp; AUTOMATION</p>
+<h3>Cardiology Research Digest</h3>
+<p>An automated literature-to-email workflow that helps clinicians discover cardiology research through AI-assisted summaries.</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">PubMed</span><span class="tag">OpenAI API</span><span class="tag">GitHub Actions</span></div>
+<div class="metric">70 <span>subscribers</span></div>
+<p class="small">Subscriber total; readership and clinical impact are not claimed.</p>
+<a href="#digest">Explore the digest →</a>
+</article>
+</div>
+<p class="small" style="margin-top:18px">Both application repositories are private. These case studies share my contribution, workflows and implementation choices.</p>
+</section>
+<section id="clinote" aria-labelledby="clinote-title">
+<div class="project-head"><div><p class="eyebrow">01 / Clinote</p><h2 id="clinote-title">From a description to a structured log.</h2><p>Recording clinical experience is easier when clinicians can describe what happened in their own words. Clinote helps turn that description into an entry they can check and save.</p></div><span class="number">50 users</span></div>
+<div class="cols">
+<div><h3>My contribution</h3><p>I built Clinote end to end with Next.js, FastAPI and PostgreSQL. I integrated the OpenAI API and refined the prompt over multiple iterations to improve consistency with the required output structure.</p><p>I use AI-assisted coding and take responsibility for the implementation and product decisions.</p></div>
+<div><h3>A workflow with clinician review</h3><p>The AI produces a draft. The clinician checks and edits it before saving. Clinote is intended for anonymised professional training logs, with instructions to exclude patient identifiers.</p><p>Prompt iteration is practical development evidence. I do not present it as a scored benchmark or clinical validation study.</p></div>
+</div>
+<ol class="flow" aria-label="Simplified Clinote workflow">
+<li><span>01 / Input</span>Clinician description<br>Next.js interface</li>
+<li><span>02 / Structure</span>FastAPI application<br>OpenAI API</li>
+<li><span>03 / Review</span>Structured draft<br>Clinician checks and edits</li>
+<li><span>04 / Save</span>Approved log entry<br>PostgreSQL</li>
+</ol>
+<p class="small">High-level workflow; not a detailed deployment or security diagram.</p>
+<details>
+<summary>See a synthetic workflow illustration</summary>
+<div class="details-body">
+<p class="small">Authored for this case study. This is an illustration, not a captured model response, application screenshot or benchmark result. Field names are illustrative.</p>
+<p class="example">“I assisted with a dual-chamber pacemaker implantation for complete heart block. No complications. I want to reflect on sterile technique and lead positioning.”</p>
+<table><caption style="text-align:left;font-weight:650">Illustrative structured draft</caption><thead><tr><th scope="col">Field</th><th scope="col">Draft value</th></tr></thead><tbody>
+<tr><th scope="row">Procedure</th><td>Dual-chamber pacemaker implantation</td></tr>
+<tr><th scope="row">Indication</th><td>Complete heart block</td></tr>
+<tr><th scope="row">My role</th><td>Assisted</td></tr>
+<tr><th scope="row">Complications</th><td>None reported in the description</td></tr>
+<tr><th scope="row">Reflection topic</th><td>Sterile technique and lead positioning</td></tr>
+<tr><th scope="row">Details not supplied</th><td>Left unspecified</td></tr>
+</tbody></table>
+<p>The clinician checks the draft against the description, corrects it if necessary, and decides whether to save it.</p>
+</div>
+</details>
+<div class="actions"><a class="button" href="https://clinote.co/">Visit Clinote ↗</a><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">Read the technical case study ↗</a></div>
+</section>
+<section id="digest" aria-labelledby="digest-title">
+<div class="project-head"><div><p class="eyebrow">02 / Cardiology Research Digest</p><h2 id="digest-title">A route from the literature to the inbox.</h2><p>Keeping up with cardiology research competes with clinical work and training. I developed an automated digest to bring literature discovery and AI-assisted summaries into one email workflow.</p></div><span class="number">70 subscribers</span></div>
+<div class="cols">
+<div><h3>The implementation</h3><p>The documented pipeline uses Python to retrieve literature from PubMed, filter and track article identifiers, generate abstract summaries through the OpenAI API, and deliver the digest by email.</p><p>GitHub Actions schedules the workflow; Gmail handles delivery. The source code and subscriber records are private.</p></div>
+<div><h3>The clinical judgement</h3><p>A summary can help a reader find a paper. Assessing its methods, limitations and applicability still requires the original research.</p><p>I do not claim that the digest independently validates study quality, changes clinical practice or produces treatment recommendations.</p></div>
+</div>
+<ol class="flow" aria-label="Simplified digest workflow">
+<li><span>01 / Discover</span>Scheduled PubMed retrieval</li>
+<li><span>02 / Select</span>Filter literature and track IDs</li>
+<li><span>03 / Summarise</span>AI-assisted abstract summaries</li>
+<li><span>04 / Deliver</span>Assemble digest and email subscribers</li>
+</ol>
+<p class="small">Pipeline overview. No guarantee of perfect deduplication or delivery is claimed.</p>
+<div class="actions"><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">Read the technical case study ↗</a></div>
+</section>
+<section id="background" aria-labelledby="background-title">
+<p class="eyebrow">The experience behind the work</p><h2 id="background-title">Clinical practice, research and model review.</h2>
+<div class="cols">
+<div><p>I bring NHS cardiology and acute-medicine experience to practical software problems. I hold an honorary clinical fellowship at the University of Liverpool and previously completed an NIHR Academic Clinical Fellowship.</p><p>My research and data work includes cardiovascular health-data analysis, systematic reviews and meta-analysis using Python and R.</p></div>
+<div><p>At Outlier / Scale AI, I reviewed medical annotations and LLM outputs against clinical accuracy and completeness rubrics, including cardiology and ECG reasoning, and provided written feedback to annotators.</p><p class="small">Medical-review work: September 2025–March 2026. Proprietary review tasks and client material are not reproduced here.</p></div>
+</div>
+</section>
+<section aria-labelledby="discuss-title">
+<p class="eyebrow">Technical conversation</p><h2 id="discuss-title">Walk through the work with me.</h2>
+<p class="lead">I can explain the implementation choices, demonstrate Clinote using synthetic information, and discuss prompt iteration and the literature-to-email pipeline.</p>
+<div class="actions"><a class="button" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Connect on LinkedIn ↗</a><a class="button secondary" href="https://github.com/realikechukwu">GitHub profile ↗</a></div>
+</section>
+</main>
+<footer>
+<div class="links"><a href="https://orcid.org/0000-0002-0646-5031">ORCID</a><a href="https://github.com/realikechukwu/about">Case studies on GitHub</a></div>
+<p>Project counts are my reported totals at 1 October 2026. This portfolio contains explanatory material and a clearly labelled synthetic illustration. It does not contain private application code, user records or formal clinical validation results.</p>
+<p>© 2026 Ikechukwu Chukwudi</p>
+</footer>
+</div>
 </body>
 </html>
