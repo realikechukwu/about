@@ -3,7 +3,7 @@
 
 **Ikechukwu Chukwudi | Literature workflow and automation | 70 subscribers at 1 October 2026**
 
-[Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
+[Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
 
 ## The problem
 
@@ -13,7 +13,7 @@ I developed an automated cardiology research digest to help bring relevant liter
 
 ## What I built
 
-The project combines literature discovery, filtering, AI-assisted abstract summaries and email delivery. The documented implementation uses **Python**, **PubMed**, the **OpenAI API** and **Gmail**, with scheduled runs through **GitHub Actions**.
+The project combines literature discovery, filtering, AI-assisted abstract summaries and email delivery. The implementation uses **Python**, **PubMed** and the **OpenAI API**, with scheduled runs through **GitHub Actions**.
 
 The digest has **70 subscribers** as of 1 October 2026. This is a subscriber count; I do not claim an open rate, a measured change in practice or a clinical outcome.
 
@@ -47,7 +47,7 @@ I use AI-assisted coding. I can discuss the pipeline, model integration and impl
 
 ## What the AI is doing
 
-The model helps summarise source abstracts. It does not independently establish study quality, reproduce a systematic review or turn a research finding into a treatment recommendation.
+The model helps summarise source abstracts and present their possible practice implications. These interpretations need checking against the original study; the digest does not independently establish study quality or reproduce a systematic review.
 
 An abstract may omit important limitations from the full paper. A digest summary is therefore a route into the literature, and readers need the original article to assess methods, applicability and uncertainty.
 
@@ -68,7 +68,7 @@ These are **proposed evaluation criteria**. I have not published a scored summar
 | Evidence | Current position |
 |---|---|
 | Project contribution | Literature-to-email workflow and automation |
-| Documented implementation | Python, PubMed, OpenAI API, Gmail, GitHub Actions |
+| Implementation | Python, PubMed, OpenAI API, scheduled email delivery through GitHub Actions |
 | Adoption | 70 subscribers at 1 October 2026 |
 | Public source code | Private application repository |
 | Evaluation and outcomes | No quantified quality, readership or clinical-impact claims here |

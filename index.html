@@ -85,8 +85,8 @@
 <section id="digest" aria-labelledby="digest-title">
 <div class="project-head"><div><p class="eyebrow">02 / Cardiology Research Digest</p><h2 id="digest-title">A route from the literature to the inbox.</h2><p>Keeping up with cardiology research competes with clinical work and training. I developed an automated digest to bring literature discovery and AI-assisted summaries into one email workflow.</p></div><span class="number">70 subscribers</span></div>
 <div class="cols">
-<div><h3>The implementation</h3><p>The documented pipeline uses Python to retrieve literature from PubMed, filter and track article identifiers, generate abstract summaries through the OpenAI API, and deliver the digest by email.</p><p>GitHub Actions schedules the workflow; Gmail handles delivery. The source code and subscriber records are private.</p></div>
-<div><h3>The clinical judgement</h3><p>A summary can help a reader find a paper. Assessing its methods, limitations and applicability still requires the original research.</p><p>I do not claim that the digest independently validates study quality, changes clinical practice or produces treatment recommendations.</p></div>
+<div><h3>The implementation</h3><p>The pipeline uses Python to retrieve literature from PubMed, filter and track article identifiers, generate abstract summaries through the OpenAI API, and deliver the digest by email.</p><p>GitHub Actions schedules the workflow and the digest is delivered by email. The source code and subscriber records are private.</p></div>
+<div><h3>The clinical judgement</h3><p>A summary can help a reader find a paper. Assessing its methods, limitations and applicability still requires the original research.</p><p>Summaries include possible practice implications that readers should check against the original study. The digest supports literature discovery; it does not independently validate study quality or provide personalised clinical advice.</p></div>
 </div>
 <ol class="flow" aria-label="Simplified digest workflow">
 <li><span>01 / Discover</span>Scheduled PubMed retrieval</li>
@@ -95,7 +95,7 @@
 <li><span>04 / Deliver</span>Assemble digest and email subscribers</li>
 </ol>
 <p class="small">Pipeline overview. No guarantee of perfect deduplication or delivery is claimed.</p>
-<div class="actions"><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">Read the technical case study ↗</a></div>
+<div class="actions"><a class="button" href="https://digest.realikechukwu.com/">Visit the digest ↗</a><a class="button secondary" href="https://digest.realikechukwu.com/sample">Read a sample issue ↗</a><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">Technical case study ↗</a></div>
 </section>
 <section id="background" aria-labelledby="background-title">
 <p class="eyebrow">The experience behind the work</p><h2 id="background-title">Clinical practice, research and model review.</h2>

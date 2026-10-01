@@ -11,7 +11,7 @@ I build software around problems I encounter in clinical practice. My work combi
 | Project | What I built | Reach at 1 October 2026 | Explore |
 |---|---|---|---|
 | **Clinote** | AI-assisted professional logbook; end-to-end build with Next.js, FastAPI, PostgreSQL and the OpenAI API | **50 users** | [Watch demo](https://realikechukwu.github.io/about/#clinote-demo) · [Case study](case-studies/clinote.md) · [Live product](https://clinote.co/) |
-| **Cardiology Research Digest** | Automated cardiology literature discovery, AI-assisted summaries and email delivery | **70 subscribers** | [Case study](case-studies/cardiology-digest.md) |
+| **Cardiology Research Digest** | Automated cardiology literature discovery, AI-assisted summaries and email delivery | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Case study](case-studies/cardiology-digest.md) |
 
 The source code for both applications is private. These public case studies explain the problems, workflows, implementation and my contribution without exposing application code or user data.
 
@@ -48,6 +48,8 @@ I developed an automated research digest to make cardiology literature easier to
 The case study explains the pipeline and the distinction between helping clinicians discover research and making clinical recommendations.
 
 [Read the digest case study →](case-studies/cardiology-digest.md)
+
+[Visit the digest landing page](https://digest.realikechukwu.com/) · [Read a sample issue](https://digest.realikechukwu.com/sample)
 
 ## Clinical, research and model-review experience
 
