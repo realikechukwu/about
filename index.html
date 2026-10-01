@@ -3,118 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Ikechukwu Chukwudi: NHS cardiology registrar, clinical AI builder and medical LLM reviewer. Public case studies of Clinote and the Cardiology Research Digest.">
-<meta name="theme-color" content="#16332d">
-<title>Ikechukwu Chukwudi | Clinical AI &amp; Selected Work</title>
-<link rel="stylesheet" href="assets/style.css?v=20261001-demo">
+<meta name="description" content="Ikechukwu Chukwudi — NHS cardiology registrar building clinical AI tools: Clinote and the Cardiology Digest.">
+<meta name="theme-color" content="#FAFAFA">
+<title>Ikechukwu Chukwudi</title>
+<link rel="stylesheet" href="assets/style.css?v=20261001-clinote">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="wrap">
-<nav aria-label="Main navigation">
-<a class="brand" href="#main">Ikechukwu Chukwudi</a>
-<div class="navlinks"><a href="#work">Selected work</a><a href="#background">Background</a><a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">LinkedIn ↗</a></div>
-</nav>
-<main id="main">
+<main class="wrap">
+
 <header class="hero">
-<p class="eyebrow">Clinician · Builder · Researcher</p>
-<h1>Clinical experience.<br>Working AI products.</h1>
-<p class="lead">I’m an NHS cardiology registrar building software around real clinical workflows, with experience in medical LLM review and cardiovascular research.</p>
-<p class="credentials">Ikechukwu Chukwudi · MB;BS, MRCP(UK) · United Kingdom</p>
-<div class="actions"><a class="button" href="#work">Explore my work</a><a class="button secondary" href="https://github.com/realikechukwu/about">View GitHub case studies ↗</a></div>
+<p class="label">Cardiology registrar · MRCP(UK)</p>
+<h1>Ikechukwu Chukwudi</h1>
+<p class="lead">NHS cardiology registrar. I build AI tools around real clinical workflows.</p>
 </header>
-<section id="work" aria-labelledby="work-title">
-<div class="section-top"><h2 id="work-title">Selected work</h2><span class="small">Reported totals · 1 October 2026</span></div>
-<div class="grid">
-<article class="card">
-<p class="label">01 / CLINICAL WORKFLOW</p>
+
+<section aria-labelledby="work">
+<h2 id="work" class="label">Work</h2>
+
+<article class="card card-split">
+<div>
 <h3>Clinote</h3>
-<p>An AI-assisted professional logbook. I built the application end to end, from the interface and backend to the model integration.</p>
-<div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI API</span></div>
-<div class="metric">50 <span>users</span></div>
-<p class="small">Total users; active and paying users are not claimed.</p>
-<a href="#clinote">Explore Clinote →</a>
+<p>An AI logbook for clinicians. Describe a case in your own words — Clinote turns it into a structured entry you review and save.</p>
+<p class="meta"><strong>50 users</strong> · Next.js, FastAPI, PostgreSQL, OpenAI</p>
+<a class="button" href="https://clinote.co/">Visit Clinote</a>
+</div>
+<video controls playsinline preload="metadata" poster="assets/clinote-demo-poster.jpg" aria-label="Clinote demo using synthetic data">
+<source src="assets/clinote-demo.mp4" type="video/mp4">
+<track src="assets/clinote-demo.vtt" kind="captions" srclang="en" label="English">
+</video>
 </article>
+
 <article class="card">
-<p class="label">02 / LITERATURE &amp; AUTOMATION</p>
-<h3>Cardiology Research Digest</h3>
-<p>An automated literature-to-email workflow that helps clinicians discover cardiology research through AI-assisted summaries.</p>
-<div class="tags"><span class="tag">Python</span><span class="tag">PubMed</span><span class="tag">OpenAI API</span><span class="tag">GitHub Actions</span></div>
-<div class="metric">70 <span>subscribers</span></div>
-<p class="small">Subscriber total; readership and clinical impact are not claimed.</p>
-<a href="#digest">Explore the digest →</a>
+<h3>Cardiology Digest</h3>
+<p>A weekly cardiology research email, fully automated. New papers from PubMed are filtered, summarised by AI and delivered every Sunday.</p>
+<p class="meta"><strong>70 subscribers</strong> · Python, PubMed, OpenAI, GitHub Actions</p>
+<a class="button" href="https://digest.realikechukwu.com/">Visit the digest</a>
 </article>
-</div>
-<p class="small" style="margin-top:18px">Both application repositories are private. These case studies share my contribution, workflows and implementation choices.</p>
 </section>
-<section id="clinote" aria-labelledby="clinote-title">
-<div class="project-head"><div><p class="eyebrow">01 / Clinote</p><h2 id="clinote-title">From a description to a structured log.</h2><p>Recording clinical experience is easier when clinicians can describe what happened in their own words. Clinote helps turn that description into an entry they can check and save.</p></div><span class="number">50 users</span></div>
-<div class="cols">
-<div><h3>My contribution</h3><p>I built Clinote end to end with Next.js, FastAPI and PostgreSQL. I integrated the OpenAI API and refined the prompt over multiple iterations to improve consistency with the required output structure.</p><p>I use AI-assisted coding and take responsibility for the implementation and product decisions.</p></div>
-<div><h3>A workflow with clinician review</h3><p>The AI produces a draft. The clinician checks and edits it before saving. Clinote is intended for anonymised professional training logs, with instructions to exclude patient identifiers.</p><p>Prompt iteration is practical development evidence. I do not present it as a scored benchmark or clinical validation study.</p></div>
-</div>
-<div class="demo-grid" id="clinote-demo">
-<div><h3>Watch the product flow</h3><p>A 23-second demonstration of dictation, text review, structured extraction, saving and the timeline.</p><p class="small">All entries, names, dates and hospital details shown are synthetic demonstration data. The recording illustrates the workflow; its duration is not a processing-latency measurement.</p><p><a href="assets/clinote-demo.mp4">Open the video directly ↗</a></p></div>
-<figure class="demo-video"><video controls playsinline preload="metadata" poster="assets/clinote-demo-poster.jpg" aria-label="Clinote product demonstration using synthetic data"><source src="assets/clinote-demo.mp4" type="video/mp4"><track src="assets/clinote-demo.vtt" kind="captions" srclang="en" label="Workflow descriptions">Your browser does not support embedded video. <a href="assets/clinote-demo.mp4">Open the Clinote demonstration.</a></video><figcaption>Clinote · Synthetic-data product demonstration</figcaption></figure>
-</div>
-<ol class="flow" aria-label="Simplified Clinote workflow">
-<li><span>01 / Input</span>Clinician description<br>Next.js interface</li>
-<li><span>02 / Structure</span>FastAPI application<br>OpenAI API</li>
-<li><span>03 / Review</span>Structured draft<br>Clinician checks and edits</li>
-<li><span>04 / Save</span>Approved log entry<br>PostgreSQL</li>
-</ol>
-<p class="small">High-level workflow; not a detailed deployment or security diagram.</p>
-<details>
-<summary>See a synthetic workflow illustration</summary>
-<div class="details-body">
-<p class="small">Authored for this case study. This is an illustration, not a captured model response, application screenshot or benchmark result. Field names are illustrative.</p>
-<p class="example">“I assisted with a dual-chamber pacemaker implantation for complete heart block. No complications. I want to reflect on sterile technique and lead positioning.”</p>
-<table><caption style="text-align:left;font-weight:650">Illustrative structured draft</caption><thead><tr><th scope="col">Field</th><th scope="col">Draft value</th></tr></thead><tbody>
-<tr><th scope="row">Procedure</th><td>Dual-chamber pacemaker implantation</td></tr>
-<tr><th scope="row">Indication</th><td>Complete heart block</td></tr>
-<tr><th scope="row">My role</th><td>Assisted</td></tr>
-<tr><th scope="row">Complications</th><td>None reported in the description</td></tr>
-<tr><th scope="row">Reflection topic</th><td>Sterile technique and lead positioning</td></tr>
-<tr><th scope="row">Details not supplied</th><td>Left unspecified</td></tr>
-</tbody></table>
-<p>The clinician checks the draft against the description, corrects it if necessary, and decides whether to save it.</p>
-</div>
-</details>
-<div class="actions"><a class="button" href="https://clinote.co/">Visit Clinote ↗</a><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">Read the technical case study ↗</a></div>
+
+<section aria-labelledby="background">
+<h2 id="background" class="label">Background</h2>
+<ul class="card list">
+<li>NHS cardiology and acute medicine</li>
+<li>Honorary Clinical Fellow, University of Liverpool</li>
+<li>NIHR Academic Clinical Fellowship</li>
+<li>Medical LLM reviewer, Outlier / Scale AI</li>
+<li>Cardiovascular data, systematic reviews and meta-analysis</li>
+</ul>
 </section>
-<section id="digest" aria-labelledby="digest-title">
-<div class="project-head"><div><p class="eyebrow">02 / Cardiology Research Digest</p><h2 id="digest-title">A route from the literature to the inbox.</h2><p>Keeping up with cardiology research competes with clinical work and training. I developed an automated digest to bring literature discovery and AI-assisted summaries into one email workflow.</p></div><span class="number">70 subscribers</span></div>
-<div class="cols">
-<div><h3>The implementation</h3><p>The pipeline uses Python to retrieve literature from PubMed, filter and track article identifiers, generate abstract summaries through the OpenAI API, and deliver the digest by email.</p><p>GitHub Actions schedules the workflow and the digest is delivered by email. The source code and subscriber records are private.</p></div>
-<div><h3>The clinical judgement</h3><p>A summary can help a reader find a paper. Assessing its methods, limitations and applicability still requires the original research.</p><p>Summaries include possible practice implications that readers should check against the original study. The digest supports literature discovery; it does not independently validate study quality or provide personalised clinical advice.</p></div>
-</div>
-<ol class="flow" aria-label="Simplified digest workflow">
-<li><span>01 / Discover</span>Scheduled PubMed retrieval</li>
-<li><span>02 / Select</span>Filter literature and track IDs</li>
-<li><span>03 / Summarise</span>AI-assisted abstract summaries</li>
-<li><span>04 / Deliver</span>Assemble digest and email subscribers</li>
-</ol>
-<p class="small">Pipeline overview. No guarantee of perfect deduplication or delivery is claimed.</p>
-<div class="actions"><a class="button" href="https://digest.realikechukwu.com/">Visit the digest ↗</a><a class="button secondary" href="https://digest.realikechukwu.com/sample">Read a sample issue ↗</a><a class="button secondary" href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">Technical case study ↗</a></div>
-</section>
-<section id="background" aria-labelledby="background-title">
-<p class="eyebrow">The experience behind the work</p><h2 id="background-title">Clinical practice, research and model review.</h2>
-<div class="cols">
-<div><p>I bring NHS cardiology and acute-medicine experience to practical software problems. I hold an honorary clinical fellowship at the University of Liverpool and previously completed an NIHR Academic Clinical Fellowship.</p><p>My research and data work includes cardiovascular health-data analysis, systematic reviews and meta-analysis using Python and R.</p></div>
-<div><p>At Outlier / Scale AI, I reviewed medical annotations and LLM outputs against clinical accuracy and completeness rubrics, including cardiology and ECG reasoning, and provided written feedback to annotators.</p><p class="small">Medical-review work: September 2025–March 2026. Proprietary review tasks and client material are not reproduced here.</p></div>
+
+<section aria-labelledby="contact">
+<h2 id="contact" class="label">Contact</h2>
+<div class="card">
+<p>Happy to walk through either project or demo Clinote.</p>
+<a class="button" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Message me on LinkedIn</a>
 </div>
 </section>
-<section aria-labelledby="discuss-title">
-<p class="eyebrow">Technical conversation</p><h2 id="discuss-title">Walk through the work with me.</h2>
-<p class="lead">I can explain the implementation choices, demonstrate Clinote using synthetic information, and discuss prompt iteration and the literature-to-email pipeline.</p>
-<div class="actions"><a class="button" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Connect on LinkedIn ↗</a><a class="button secondary" href="https://github.com/realikechukwu">GitHub profile ↗</a></div>
-</section>
+
+<footer>© 2026 Ikechukwu Chukwudi</footer>
 </main>
-<footer>
-<div class="links"><a href="https://orcid.org/0000-0002-0646-5031">ORCID</a><a href="https://github.com/realikechukwu/about">Case studies on GitHub</a></div>
-<p>Project counts are my reported totals at 1 October 2026. This portfolio contains explanatory material and a clearly labelled synthetic illustration. It does not contain private application code, user records or formal clinical validation results.</p>
-<p>© 2026 Ikechukwu Chukwudi</p>
-</footer>
-</div>
 </body>
 </html>
