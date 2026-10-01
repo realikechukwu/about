@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Ikechukwu Chukwudi — NHS cardiology registrar building clinical AI tools: Clinote and the Cardiology Digest.">
-<meta name="theme-color" content="#FAFAFA">
+<meta name="theme-color" content="#ffffff">
 <title>Ikechukwu Chukwudi</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -18,61 +18,94 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Ikechukwu Chukwudi, cardiology registrar. Clinote: AI logbook for clinicians, 50 users. Cardiology Digest: weekly research email, 70 subscribers.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/style.css?v=20261001-clinote">
+<link rel="stylesheet" href="assets/style.css?v=20261001-web">
 </head>
 <body>
-<main class="wrap">
 
-<header class="hero">
-<p class="label">Cardiology registrar · MRCP(UK)</p>
-<h1>Ikechukwu Chukwudi</h1>
-<p class="lead">NHS cardiology registrar. I build AI tools around real clinical workflows.</p>
+<header class="top wrap">
+<a class="brand" href="#"><span class="mark">IC</span>Ikechukwu Chukwudi</a>
+<nav aria-label="Sections"><a href="#clinote">Clinote</a><a href="#digest">Digest</a><a href="#background">Background</a></nav>
 </header>
 
-<section aria-labelledby="work">
-<h2 id="work" class="label">Work</h2>
-
-<article class="card card-split">
-<div>
-<h3>Clinote</h3>
-<p>An AI logbook for clinicians. Describe a case in your own words — Clinote turns it into a structured entry you review and save.</p>
-<p class="meta"><strong>50 users</strong> · Next.js, FastAPI, PostgreSQL, OpenAI</p>
-<a class="button" href="https://clinote.co/">Visit Clinote</a>
+<main>
+<section class="hero wrap">
+<h1>Ikechukwu Chukwudi</h1>
+<p class="sub">NHS cardiology registrar building AI tools for clinical work.</p>
+<p class="creds">MB;BS · MRCP(UK) · Liverpool, available in London</p>
+<div class="ctas">
+<a class="pill" href="#clinote">See the work</a>
+<a class="arrow" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Message me on LinkedIn →</a>
 </div>
+</section>
+
+<section class="stats wrap" aria-label="At a glance">
+<div><strong>50</strong><span>Clinote users</span></div>
+<div><strong>70</strong><span>Digest subscribers</span></div>
+<div><strong>20</strong><span>Journals tracked weekly</span></div>
+<div><strong>5 yrs</strong><span>NHS clinical practice</span></div>
+</section>
+
+<section class="project wrap" id="clinote">
+<div class="copy">
+<p class="eyebrow">01 · Clinote</p>
+<h2>From a spoken case to a structured log.</h2>
+<p class="body">Clinicians describe a procedure or case in their own words. Clinote turns it into a structured logbook entry they check, edit and save. I designed and built it end to end.</p>
+<dl>
+<div><dt>Stack</dt><dd>Next.js, FastAPI, PostgreSQL, OpenAI API</dd></div>
+<div><dt>Safety</dt><dd>The clinician reviews every AI draft before it is saved. Anonymised training logs only.</dd></div>
+<div><dt>Users</dt><dd>50, as of October 2026</dd></div>
+</dl>
+<a class="arrow" href="https://clinote.co/">Visit clinote.co →</a>
+</div>
+<figure class="visual">
 <video controls playsinline preload="metadata" poster="assets/clinote-demo-poster.jpg" aria-label="Clinote demo using synthetic data">
 <source src="assets/clinote-demo.mp4" type="video/mp4">
 <track src="assets/clinote-demo.vtt" kind="captions" srclang="en" label="English">
 </video>
-</article>
-
-<article class="card">
-<h3>Cardiology Digest</h3>
-<p>A weekly cardiology research email, fully automated. New papers from PubMed are filtered, summarised by AI and delivered every Sunday.</p>
-<p class="meta"><strong>70 subscribers</strong> · Python, PubMed, OpenAI, GitHub Actions</p>
-<a class="button" href="https://digest.realikechukwu.com/">Visit the digest</a>
-</article>
+<figcaption>23-second demo · synthetic data</figcaption>
+</figure>
 </section>
 
-<section aria-labelledby="background">
-<h2 id="background" class="label">Background</h2>
-<ul class="card list">
-<li>NHS cardiology and acute medicine</li>
-<li>Honorary Clinical Fellow, University of Liverpool</li>
-<li>NIHR Academic Clinical Fellowship</li>
-<li>Medical LLM reviewer, Outlier / Scale AI</li>
-<li>Cardiovascular data, systematic reviews and meta-analysis</li>
-</ul>
+<section class="project flip wrap" id="digest">
+<div class="copy">
+<p class="eyebrow">02 · Cardiology Digest</p>
+<h2>The week’s research, in your inbox every Sunday.</h2>
+<p class="body">A fully automated email that finds the week’s new cardiology papers, keeps the ones worth reading and summarises each in plain clinical terms. Readers mark what was useful, and that feeds back into the next issue.</p>
+<dl>
+<div><dt>Pipeline</dt><dd>PubMed → evidence filter → LLM summary → email, on GitHub Actions</dd></div>
+<div><dt>Guardrail</dt><dd>Summaries draw on the abstract only, in a fixed format.</dd></div>
+<div><dt>Readers</dt><dd>70 subscribers</dd></div>
+</dl>
+<a class="arrow" href="https://digest.realikechukwu.com/">Visit the digest →</a>
+</div>
+<figure class="visual">
+<img src="assets/digest-issue.jpg" alt="A featured RCT in a real digest issue: context, finding, a 'So what?' box and a 'Was this useful?' feedback link." loading="lazy">
+<figcaption>From a real issue · January 2026</figcaption>
+</figure>
 </section>
 
-<section aria-labelledby="contact">
-<h2 id="contact" class="label">Contact</h2>
-<div class="card">
-<p>Happy to walk through either project or demo Clinote.</p>
-<a class="button" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Message me on LinkedIn</a>
+<section class="background wrap" id="background">
+<p class="eyebrow">03 · Background</p>
+<h2>Clinic, research and model review.</h2>
+<div class="grid">
+<div><h3>Cardiology Registrar</h3><p>North Cheshire and Mersey NHS Foundation Trust, since 2026</p></div>
+<div><h3>Honorary Clinical Fellow</h3><p>University of Liverpool, since 2023</p></div>
+<div><h3>NIHR Academic Clinical Fellow</h3><p>Cardiovascular outcomes and inequalities using real-world NHS data</p></div>
+<div><h3>Medical LLM reviewer</h3><p>Outlier / Scale AI: graded clinical accuracy of model outputs, including ECG reasoning</p></div>
+<div><h3>Research</h3><p>Systematic reviews and meta-analysis in Python and R</p></div>
+<div><h3>MB;BS, MRCP(UK)</h3><p>Best graduating student, University of Ibadan</p></div>
 </div>
 </section>
 
-<footer>© 2026 Ikechukwu Chukwudi</footer>
+<section class="dark">
+<div class="wrap">
+<h2>Let’s talk.</h2>
+<p>Happy to walk through either project or give a live demo of Clinote.</p>
+<a class="pill light" href="https://www.linkedin.com/in/ikechukwu-chukwudi/">Message me on LinkedIn</a>
+</div>
+</section>
 </main>
+
+<footer class="wrap">© 2026 Ikechukwu Chukwudi</footer>
 </body>
 </html>
