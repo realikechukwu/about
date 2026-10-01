@@ -3,7 +3,17 @@
 
 **Ikechukwu Chukwudi | End-to-end application development | 50 users at 1 October 2026**
 
-[Live product](https://clinote.co/) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
+[Watch product demo](https://realikechukwu.github.io/about/#clinote-demo) · [Live product](https://clinote.co/) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
+
+## See the product
+
+The **23-second demonstration** shows voice capture, text review, extraction into structured fields, saving and the timeline. All clinical entries, names, dates and hospital details in the recording are synthetic demonstration data.
+
+<a href="https://realikechukwu.github.io/about/#clinote-demo"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen using synthetic demonstration data" width="280"></a>
+
+[Watch in the portfolio](https://realikechukwu.github.io/about/#clinote-demo) · [Open the video directly](https://realikechukwu.github.io/about/assets/clinote-demo.mp4)
+
+The recording illustrates the product workflow; its duration is not a measure of processing latency.
 
 ## The problem
 

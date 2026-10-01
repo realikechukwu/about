@@ -10,7 +10,7 @@ I build software around problems I encounter in clinical practice. My work combi
 
 | Project | What I built | Reach at 1 October 2026 | Explore |
 |---|---|---|---|
-| **Clinote** | AI-assisted professional logbook; end-to-end build with Next.js, FastAPI, PostgreSQL and the OpenAI API | **50 users** | [Case study](case-studies/clinote.md) · [Live product](https://clinote.co/) |
+| **Clinote** | AI-assisted professional logbook; end-to-end build with Next.js, FastAPI, PostgreSQL and the OpenAI API | **50 users** | [Watch demo](https://realikechukwu.github.io/about/#clinote-demo) · [Case study](case-studies/clinote.md) · [Live product](https://clinote.co/) |
 | **Cardiology Research Digest** | Automated cardiology literature discovery, AI-assisted summaries and email delivery | **70 subscribers** | [Case study](case-studies/cardiology-digest.md) |
 
 The source code for both applications is private. These public case studies explain the problems, workflows, implementation and my contribution without exposing application code or user data.
@@ -18,6 +18,10 @@ The source code for both applications is private. These public case studies expl
 ## Clinote: from description to structured log
 
 I built Clinote end to end. A clinician describes a procedure or clinical experience; the OpenAI API helps turn that description into a structured draft. The clinician reviews it before saving.
+
+**[Watch the 23-second product demo →](https://realikechukwu.github.io/about/#clinote-demo)**
+
+The recording uses synthetic demonstration data and shows dictation, text review, structured extraction, saving and the timeline.
 
 I implemented the application and AI integration using **Next.js, FastAPI and PostgreSQL**, and refined the prompts over multiple iterations to improve consistency with the required output structure. I use AI-assisted coding and take responsibility for the implementation and product decisions.
 
