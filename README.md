@@ -19,7 +19,7 @@ Both codebases are private, so the case studies cover how they work instead.
 
 You describe a procedure or case in your own words, Clinote turns it into a structured log entry, and you check it before saving.
 
-**[Watch the 23-second demo →](https://realikechukwu.github.io/about/#clinote-demo)** (synthetic data)
+**[Watch the 23-second demo](https://realikechukwu.github.io/about/#clinote-demo)**
 
 I built it end to end with **Next.js, FastAPI and PostgreSQL**, using the OpenAI API for the extraction step, and went through a lot of prompt iterations to get the output structure consistent.
 
@@ -35,13 +35,13 @@ flowchart LR
 
 It's for anonymised training logs only, and users are told not to enter patient identifiers.
 
-[Read the Clinote case study →](case-studies/clinote.md)
+[Read the Clinote case study](case-studies/clinote.md)
 
 ## Cardiology Research Digest
 
 A weekly email that pulls new cardiology papers from PubMed, filters them, and summarises each abstract. It has **70 subscribers**.
 
-[Read the digest case study →](case-studies/cardiology-digest.md) · [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample)
+[Read the digest case study](case-studies/cardiology-digest.md) · [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample)
 
 ## Background
 

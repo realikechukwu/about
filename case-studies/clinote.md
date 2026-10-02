@@ -7,9 +7,9 @@
 
 ## Demo
 
-The 23-second demo shows dictation, reviewing the text, extraction into fields, saving, and the timeline. Everything in it is made-up data.
+The 23-second demo shows dictation, reviewing the text, extraction into fields, saving, and the timeline.
 
-<a href="https://realikechukwu.github.io/about/#clinote-demo"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen using synthetic demonstration data" width="280"></a>
+<a href="https://realikechukwu.github.io/about/#clinote-demo"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen" width="280"></a>
 
 [Watch in the portfolio](https://realikechukwu.github.io/about/#clinote-demo) · [Open the video directly](https://realikechukwu.github.io/about/assets/clinote-demo.mp4)
 
