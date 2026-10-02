@@ -4,26 +4,24 @@
 
 [View the portfolio](https://realikechukwu.github.io/about/) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
 
-I build software around problems I encounter in clinical practice. My work combines NHS cardiology and acute medicine, cardiovascular research, medical LLM review, and hands-on product development.
+I build software for problems I run into at work. Day to day I'm a cardiology registrar; outside that I do cardiovascular research, review medical LLM outputs, and build products.
 
-## Selected projects
+## Projects
 
-| Project | What I built | Reach at 1 October 2026 | Explore |
+| Project | What it is | Reach (Oct 2026) | Links |
 |---|---|---|---|
-| **Clinote** | AI-assisted professional logbook; end-to-end build with Next.js, FastAPI, PostgreSQL and the OpenAI API | **50 users** | [Watch demo](https://realikechukwu.github.io/about/#clinote-demo) · [Case study](case-studies/clinote.md) · [Live product](https://clinote.co/) |
-| **Cardiology Research Digest** | Automated cardiology literature discovery, AI-assisted summaries and email delivery | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Case study](case-studies/cardiology-digest.md) |
+| **Clinote** | AI-assisted logbook for clinicians. Next.js, FastAPI, PostgreSQL, OpenAI API | **50 users** | [Demo](https://realikechukwu.github.io/about/#clinote-demo) · [Case study](case-studies/clinote.md) · [clinote.co](https://clinote.co/) |
+| **Cardiology Research Digest** | Weekly email of new cardiology papers, found and summarised automatically | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Case study](case-studies/cardiology-digest.md) |
 
-The source code for both applications is private. These public case studies explain the problems, workflows, implementation and my contribution without exposing application code or user data.
+Both codebases are private, so the case studies cover how they work instead.
 
-## Clinote: from description to structured log
+## Clinote
 
-I built Clinote end to end. A clinician describes a procedure or clinical experience; the OpenAI API helps turn that description into a structured draft. The clinician reviews it before saving.
+You describe a procedure or case in your own words, Clinote turns it into a structured log entry, and you check it before saving.
 
-**[Watch the 23-second product demo →](https://realikechukwu.github.io/about/#clinote-demo)**
+**[Watch the 23-second demo →](https://realikechukwu.github.io/about/#clinote-demo)** (synthetic data)
 
-The recording uses synthetic demonstration data and shows dictation, text review, structured extraction, saving and the timeline.
-
-I implemented the application and AI integration using **Next.js, FastAPI and PostgreSQL**, and refined the prompts over multiple iterations to improve consistency with the required output structure. I use AI-assisted coding and take responsibility for the implementation and product decisions.
+I built it end to end with **Next.js, FastAPI and PostgreSQL**, using the OpenAI API for the extraction step, and went through a lot of prompt iterations to get the output structure consistent.
 
 ```mermaid
 flowchart LR
@@ -35,33 +33,25 @@ flowchart LR
     F --> G["Approved log in PostgreSQL"]
 ```
 
-*High-level workflow; not a detailed deployment or security diagram.*
-
-Clinote is intended for anonymised professional training logs. The [published product workflow](https://clinote.co/) requires review before saving and tells users not to enter patient identifiers. Formal benchmark results and measured time savings are not claimed here.
+It's for anonymised training logs only, and users are told not to enter patient identifiers.
 
 [Read the Clinote case study →](case-studies/clinote.md)
 
-## Cardiology Research Digest: literature to inbox
+## Cardiology Research Digest
 
-I developed an automated research digest to make cardiology literature easier to follow. The workflow brings together PubMed discovery, filtering, AI-assisted abstract summaries and email delivery. It has **70 subscribers** as of 1 October 2026.
+A weekly email that pulls new cardiology papers from PubMed, filters them, and summarises each abstract. It has **70 subscribers**.
 
-The case study explains the pipeline and the distinction between helping clinicians discover research and making clinical recommendations.
+[Read the digest case study →](case-studies/cardiology-digest.md) · [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample)
 
-[Read the digest case study →](case-studies/cardiology-digest.md)
+## Background
 
-[Visit the digest landing page](https://digest.realikechukwu.com/) · [Read a sample issue](https://digest.realikechukwu.com/sample)
+- **Cardiology registrar**, NHS, with experience across cardiology and acute medicine.
+- **Honorary Clinical Fellow, University of Liverpool**; previously NIHR Academic Clinical Fellow.
+- **Medical reviewer, Outlier / Scale AI (Sep 2025 – Mar 2026):** graded medical annotations and LLM outputs for clinical accuracy, including cardiology and ECG reasoning.
+- **Research:** cardiovascular health-data analysis, systematic reviews and meta-analysis in Python and R.
 
-## Clinical, research and model-review experience
+## Get in touch
 
-- **NHS cardiology registrar**, with clinical experience across cardiology and acute medicine.
-- **Honorary Clinical Fellow, University of Liverpool**; former NIHR Academic Clinical Fellow.
-- **Medical reviewer, Outlier / Scale AI (September 2025–March 2026):** reviewed medical annotations and LLM outputs against clinical accuracy and completeness rubrics, including cardiology and ECG reasoning; provided written feedback to annotators.
-- **Research and data work:** cardiovascular health-data analysis, systematic reviews and meta-analysis using Python and R.
+Happy to walk through either project or demo Clinote live.
 
-## Discussing the work
-
-I can walk through my implementation choices and prompt iteration, and demonstrate Clinote using synthetic information. This repository contains explanatory material; it does not contain the private applications or a clinical validation study.
-
-[LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/) · [ORCID](https://orcid.org/0000-0002-0646-5031) · [GitHub](https://github.com/realikechukwu) · [Portfolio page source](index.html)
-
-*Project counts are my reported totals at 1 October 2026. “Users” does not imply active or paying users; subscribers does not imply a measured readership rate.*
+[LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/) · [ORCID](https://orcid.org/0000-0002-0646-5031) · [GitHub](https://github.com/realikechukwu)

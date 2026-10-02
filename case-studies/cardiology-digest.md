@@ -1,80 +1,48 @@
 # Cardiology Research Digest
-## An automated literature-to-email workflow for cardiology
+## New cardiology papers, summarised and emailed weekly
 
-**Ikechukwu Chukwudi | Literature workflow and automation | 70 subscribers at 1 October 2026**
+**Ikechukwu Chukwudi | 70 subscribers as of October 2026**
 
 [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
 
 ## The problem
 
-Keeping up with cardiology research competes with clinical work, training and other commitments. Finding a paper, deciding whether it is relevant and understanding its main point are separate tasks.
+Keeping up with cardiology research is hard alongside clinical work. Finding papers, deciding which matter, and getting the main point out of each are three separate jobs, and they rarely get done.
 
-I developed an automated cardiology research digest to help bring relevant literature into subscribers' inboxes.
+So I automated it.
 
 ## What I built
 
-The project combines literature discovery, filtering, AI-assisted abstract summaries and email delivery. The implementation uses **Python**, **PubMed** and the **OpenAI API**, with scheduled runs through **GitHub Actions**.
-
-The digest has **70 subscribers** as of 1 October 2026. This is a subscriber count; I do not claim an open rate, a measured change in practice or a clinical outcome.
-
-## The workflow
+A **Python** pipeline that runs on a schedule with **GitHub Actions**. It searches **PubMed** for new papers, filters them, summarises each abstract with the **OpenAI API**, and emails the digest to subscribers.
 
 ```mermaid
 flowchart LR
-    A["Scheduled run"] --> B["PubMed literature discovery"]
+    A["Scheduled run"] --> B["PubMed search"]
     B --> C["Filter and track article IDs"]
-    C --> D["OpenAI-assisted abstract summaries"]
-    D --> E["Assemble digest with source references"]
+    C --> D["Summarise abstracts"]
+    D --> E["Build digest with links"]
     E --> F["Email subscribers"]
 ```
 
-*Simplified pipeline overview. The private implementation is not reproduced here.*
-
-| Stage | Purpose |
+| Stage | What happens |
 |---|---|
-| Discover literature | Retrieve article metadata and abstracts from PubMed |
-| Filter and track | Narrow the candidate literature and track article identifiers |
-| Summarise | Turn abstracts into a consistent, readable digest format using the OpenAI API |
-| Deliver | Assemble the selected material and send it by email |
+| Search | Pull new article metadata and abstracts from PubMed |
+| Filter | Keep the relevant papers and record their IDs so they don't show up twice |
+| Summarise | Turn each abstract into a short summary in a fixed format |
+| Send | Put the issue together and email it |
 
-The pipeline's article tracking is a mechanism for reducing repeat content; this case study makes no guarantee of perfect deduplication or delivery.
+## Limits of the summaries
 
-## My contribution
+Summaries are based on the abstract only, and abstracts often leave out a study's weaknesses. The digest is meant to point you at papers worth reading, not replace reading them.
 
-I developed the digest workflow and automation. The project connects my clinical interest in cardiology with practical software work: turning literature retrieval and summarisation into a service with subscribers.
+## What's next
 
-I use AI-assisted coding. I can discuss the pipeline, model integration and implementation choices during a technical walkthrough. The source code and subscriber information remain private.
+I want to check a sample of summaries against their abstracts for:
 
-## What the AI is doing
+- Findings or recommendations that aren't in the source, or claims stated more strongly than the paper does.
+- Wrong study design, population, intervention, comparator or numbers.
+- Missing limitations, or association presented as causation.
+- Broken or wrong links.
+- Duplicate articles and failed sends.
 
-The model helps summarise source abstracts and present their possible practice implications. These interpretations need checking against the original study; the digest does not independently establish study quality or reproduce a systematic review.
-
-An abstract may omit important limitations from the full paper. A digest summary is therefore a route into the literature, and readers need the original article to assess methods, applicability and uncertainty.
-
-## Quality questions and next evaluation
-
-A useful evaluation would compare a sample of summaries with their source abstracts, looking for:
-
-- Unsupported findings, recommendations or changes in the strength of a claim.
-- Incorrect study design, population, intervention, comparator or numerical results.
-- Missing limitations and confusion between association and causation.
-- Broken or mismatched source references.
-- Repeat articles and incomplete delivery.
-
-These are **proposed evaluation criteria**. I have not published a scored summary evaluation, engagement analytics or clinical validation results in this case study.
-
-## Evidence at a glance
-
-| Evidence | Current position |
-|---|---|
-| Project contribution | Literature-to-email workflow and automation |
-| Implementation | Python, PubMed, OpenAI API, scheduled email delivery through GitHub Actions |
-| Adoption | 70 subscribers at 1 October 2026 |
-| Public source code | Private application repository |
-| Evaluation and outcomes | No quantified quality, readership or clinical-impact claims here |
-
-## Discussing the project
-
-I can explain the retrieval-to-email pipeline and the choices involved in making literature summaries useful to clinicians. This public case study contains no subscriber records, credentials or private application code.
-
-[Back to selected work](../README.md)
+[Back to the portfolio](../README.md)
