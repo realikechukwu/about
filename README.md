@@ -19,7 +19,7 @@ Both codebases are private, so the case studies cover how they work instead.
 
 You describe a procedure or case in your own words, Clinote turns it into a structured log entry, and you check it before saving.
 
-**[Watch the 23-second demo](https://realikechukwu.github.io/about/#clinote-demo)**
+**[Watch the demo](https://realikechukwu.github.io/about/#clinote-demo)**
 
 I built it end to end with **Next.js, FastAPI and PostgreSQL**, using the OpenAI API for the extraction step, and went through a lot of prompt iterations to get the output structure consistent.
 

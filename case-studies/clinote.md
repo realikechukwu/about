@@ -7,7 +7,7 @@
 
 ## Demo
 
-The 23-second demo shows dictation, reviewing the text, extraction into fields, saving, and the timeline.
+The demo shows dictation, reviewing the text, extraction into fields, saving, and the timeline.
 
 <a href="https://realikechukwu.github.io/about/#clinote-demo"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen" width="280"></a>
 
