@@ -10,10 +10,10 @@ I build software for problems I run into at work. Day to day I'm a cardiology re
 
 | Project | What it is | Reach (Oct 2026) | Links |
 |---|---|---|---|
-| **Clinote** | AI-assisted logbook for clinicians. Next.js, FastAPI, PostgreSQL, OpenAI API | **50 users** | [Demo](https://realikechukwu.github.io/about/#clinote-demo) · [Case study](case-studies/clinote.md) · [clinote.co](https://clinote.co/) |
-| **Cardiology Research Digest** | Weekly email of new cardiology papers, found and summarised automatically | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [Case study](case-studies/cardiology-digest.md) |
+| **Clinote** | AI-assisted logbook for clinicians. Next.js, FastAPI, PostgreSQL, OpenAI API | **50 users** | [Demo](https://realikechukwu.github.io/about/#clinote-demo) · [How it works](case-studies/clinote.md) · [clinote.co](https://clinote.co/) |
+| **Cardiology Research Digest** | Weekly email of new cardiology papers, found and summarised automatically | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [How it works](case-studies/cardiology-digest.md) |
 
-Both codebases are private, so the case studies cover how they work instead.
+Both codebases are private, so I've written up how each one works instead.
 
 ## Clinote
 
@@ -35,13 +35,13 @@ flowchart LR
 
 It's for anonymised training logs only, and users are told not to enter patient identifiers.
 
-[Read the Clinote case study](case-studies/clinote.md)
+[How Clinote works](case-studies/clinote.md)
 
 ## Cardiology Research Digest
 
 A weekly email that pulls new cardiology papers from PubMed, filters them, and summarises each abstract. It has **70 subscribers**.
 
-[Read the digest case study](case-studies/cardiology-digest.md) · [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample)
+[How the digest works](case-studies/cardiology-digest.md) · [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample)
 
 ## Background
 
