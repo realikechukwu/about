@@ -1,4 +1,4 @@
-# Cardiology Research Digest
+# Cardiology Digest
 ## New cardiology papers, summarised and emailed weekly
 
 **Ikechukwu Chukwudi | 70 subscribers as of October 2026**
