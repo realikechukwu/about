@@ -176,14 +176,7 @@ h3{font-size:1.05rem;margin:1.5rem 0 .35rem}
 .also li{margin-bottom:.4rem}
 .pubs{font-size:.96rem;padding-left:1.25rem}
 .pubs li{margin-bottom:.6rem}
-.principles{
-  margin:1.35rem 0 .25rem;
-  padding:.85rem 1.1rem;
-  border-left:2px solid var(--rule);
-}
-.principles h3{margin:0 0 .45rem;font-size:1rem;color:var(--accent);font-weight:normal;font-variant:small-caps;letter-spacing:.05em}
-.principles ul{margin:0;padding-left:1.15rem;font-size:.96rem}
-.principles li{margin-bottom:.3rem}
+ul.how li{margin-bottom:.45rem}
 .ecg{margin:1.75rem 0 .5rem;line-height:0}
 .ecg svg{width:100%;height:1.65rem;display:block}
 nav.toc{margin:1.1rem 0 0}
@@ -254,6 +247,7 @@ footer{margin-top:.5rem}
   <nav class="toc" aria-label="On this page">
     <ul class="toc">
       <li><a href="#tools">Clinical tools</a></li>
+      <li><a href="#how">How I build</a></li>
       <li><a href="#writing">Writing and resources</a></li>
       <li><a href="#medicine">Medicine and research</a></li>
       <li><a href="#cv">Timeline</a></li>
@@ -268,10 +262,10 @@ footer{margin-top:.5rem}
 
   <section>
     <h2 id="tools">Clinical tools</h2>
-    <p class="lede">Most of what I build starts as a friction I ran into on the ward. clinic or my day to day life.</p>
+    <p class="lede">Most of what I build starts as a friction I ran into on the ward, in clinic or in my day-to-day life.</p>
 
     <h3 id="clinote">Clinote: a logbook you can talk to</h3>
-    <p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end and constantly iterating on it.</p>
+    <p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end, and I'm constantly iterating on it.</p>
     <p class="meta">Next.js, FastAPI, PostgreSQL, OpenAI API &middot; 80 users as of October 2026 &middot; anonymised training logs only</p>
     <p class="links"><a href="https://clinote.co/">clinote.co</a> &middot; <a href="assets/clinote-demo.mp4">watch the demo</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">how it works</a></p>
 
@@ -292,18 +286,18 @@ footer{margin-top:.5rem}
     <h3 id="aicardio">AI in Cardiology Decoded</h3>
     <p>A free, plain-language guide to machine learning for clinicians. I built it after I found <a href="https://academic.oup.com/ehjdh/article/7/9/ztag154/9016354">this really good paper</a> but struggled to understand a lot of it and needed a lot of AI assistance to explain the concepts. After getting AI to explain and break it down so clearly, I thought it would be reasonable to share it. It takes you from the basics to more advanced topics, with 12 chapters, 11 animated explainers and 5 interactive labs. It simplifies complex concepts into digestible pieces, from a decision tree you can grow to understand the basics of sensitivity, AUC and Transformers. It's an independent study companion to the <a href="https://academic.oup.com/ehjdh/article/7/9/ztag154/9016354">2026 ESC scientific statement on AI in cardiology for non-experts</a>.</p>
     <p class="links"><a href="https://aicardio.medpally.com/">aicardio.medpally.com</a></p>
+  </section>
 
-    <aside class="principles" aria-labelledby="how">
-      <h3 id="how">How I build</h3>
-      <ul>
-        <li>After I decide on a problem that needs solving, I iteratively prompt an AI coding agent to get a working plan.</li>
-        <li>I try to make sure I review as much as I can before the writing starts and I tend to feed it a lot of visual inspiration and hand sketches for my UI work.</li>
-        <li>I tend to use a lot of flow charts and html artefacts to review the output as it makes it easier to spot issues.</li>
-        <li>My stack includes Claude and Codex. I also work remotely using remote control for the tools from my phone.</li>
-        <li>Github issues has come in very handy and I find that it really helps me keep on top of my work despite my busy schedule. </li>
-        <li>Cloudflare Workers has become an essential part of my workflow, allowing me to deploy and manage a lot of my applications with ease.</li>
-      </ul>
-    </aside>
+  <section>
+    <h2 id="how">How I build</h2>
+    <ul class="how">
+      <li>After I decide on a problem that needs solving, I iteratively prompt an AI coding agent to get a working plan.</li>
+      <li>I try to make sure I review as much as I can before the writing starts and I tend to feed it a lot of visual inspiration and hand sketches for my UI work.</li>
+      <li>I tend to use a lot of flow charts and HTML artefacts to review the output as it makes it easier to spot issues.</li>
+      <li>My stack includes Claude and Codex. I also work remotely using remote control for the tools from my phone.</li>
+      <li>GitHub Issues has come in very handy and I find that it really helps me keep on top of my work despite my busy schedule.</li>
+      <li>Cloudflare Workers has become an essential part of my workflow, allowing me to deploy and manage a lot of my applications with ease.</li>
+    </ul>
   </section>
 
   <section>
