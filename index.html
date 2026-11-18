@@ -248,7 +248,7 @@ footer{margin-top:.5rem}
 
   <p>Around clinical work, I care about cardiovascular research, practical AI in medicine, and helping people navigate big transitions. That turns into two things: building software that helps clinicians log their training, keep up with the evidence and make sense of AI; and writing for doctors following the path I took, from medical school in Ibadan to the NHS.</p>
 
-  <p>This page is the short version of all of it. It's plain HTML on purpose&mdash;fast, readable, and free of JavaScript.</p>
+  <p>This page is the short version of all of it. I have tried to keep it as simple and accessible as possible by writing in plain HTML.</p>
 
   <nav class="toc" aria-label="On this page">
     <ul class="toc">
@@ -267,11 +267,11 @@ footer{margin-top:.5rem}
 
   <section>
     <h2 id="tools">Clinical tools</h2>
-    <p class="lede">Most of what I build starts as a friction I ran into on the ward or at my desk.</p>
+    <p class="lede">Most of what I build starts as a friction I ran into on the ward. clinic or my day to day life.</p>
 
     <h3 id="clinote">Clinote: a logbook you can talk to</h3>
-    <p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end.</p>
-    <p class="meta">Next.js, FastAPI, PostgreSQL, OpenAI API &middot; 50 users as of October 2026 &middot; anonymised training logs only</p>
+    <p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end and constantly iterating on it.</p>
+    <p class="meta">Next.js, FastAPI, PostgreSQL, OpenAI API &middot; 80 users as of October 2026 &middot; anonymised training logs only</p>
     <p class="links"><a href="https://clinote.co/">clinote.co</a> &middot; <a href="assets/clinote-demo.mp4">watch the demo</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">how it works</a></p>
 
     <p class="also">Also under Clinote:</p>
@@ -296,16 +296,18 @@ footer{margin-top:.5rem}
     <p class="links"><a href="https://find.medpally.com/">find.medpally.com</a> &middot; <a href="https://github.com/realikechukwu/medpally-find">source on GitHub</a></p>
 
     <h3 id="aicardio">AI in Cardiology Decoded</h3>
-    <p>A free, plain-language guide to machine learning for clinicians. Every term gets one line, one picture, one cardiology example and one warning. There are 12 chapters, 11 animated explainers and 5 interactive labs, from a decision tree you can grow to a sensitivity, specificity and AUC explorer. It's an independent study companion to the 2026 ESC scientific statement on AI in cardiology for non-experts.</p>
+    <p>A free, plain-language guide to machine learning for clinicians. I built it after I found this really good paper but struggled to understand a lot of it and needed a lot of AI assistance to explain the concepts. After getting AI to explain and break it down so clearly, I thought it would be reasonable to share it. It takes you from the basics to more advanced topics, with 12 chapters, 11 animated explainers and 5 interactive labs. It simplifies complex concepts into digestible pieces, from a decision tree you can grow to understand the basics of sensitivity, AUC and Transformers. It's an independent study companion to the 2026 ESC scientific statement on AI in cardiology for non-experts.</p>
     <p class="links"><a href="https://aicardio.medpally.com/">aicardio.medpally.com</a></p>
 
     <aside class="principles" aria-labelledby="how">
       <h3 id="how">How I build</h3>
       <ul>
-        <li>The AI drafts and the clinician decides. Every Clinote entry is read by a person before it's saved.</li>
-        <li>Stay close to the source. Digest summaries use the abstract only, in a fixed format.</li>
-        <li>No patient identifiers. Clinote is for anonymised training logs, and Echo Companion stores nothing.</li>
-        <li>I use AI-assisted coding across Claude, ChatGPT and Gemini. Before AI, I had beginner proficiency in Python, R, SQL and graphic design; since then it has quadrupled my efficiency, and I remain responsible for every decision it touches.</li>
+        <li>After I decide on a problem that needs solving, I iteratively prompt an AI coding agent to get a working plan.</li>
+        <li>I try to make sure I review as much as I can before the writing starts and I tend to feed it a lot of visual inspiration and hand sketches for my UI work.</li>
+        <li>I tend to use a lot of flow charts and html artefacts to review the output as it makes it easier to spot issues.</li>
+        <li>My stack includes Claude and Codex. I also work remotely using remote control for the tools from my phone.</li>
+        <li>Github issues has come in very handy and I find that it really helps me keep on top of my work despite my busy schedule. </li>
+        <li>Cloudflare Workers has become an essential part of my workflow, allowing me to deploy and manage a lot of my applications with ease.</li>
       </ul>
     </aside>
   </section>
@@ -344,9 +346,9 @@ footer{margin-top:.5rem}
 
   <section>
     <h2 id="medicine">Medicine and research</h2>
-    <p>Medicine is the day job behind all of this. I trained at the University of Ibadan, came to the UK through PLAB, and hold the MRCP(UK). I've worked in the NHS for five years across acute medicine and cardiology, and I'm now a cardiology registrar at North Cheshire and Mersey NHS Foundation Trust.</p>
+    <p>Medicine is the day job behind all of this. I trained at the University of Ibadan, came to the UK through PLAB, and hold the MRCP(UK). I've worked in the NHS for five years across various medical and surgical specialties, and I'm now a cardiology registrar in Merseyside.</p>
 
-    <p>Alongside clinical work, I was an NIHR Academic Clinical Fellow working on cardiovascular outcomes and inequalities using real-world NHS data, and I've been an Honorary Clinical Fellow at the University of Liverpool since 2023. I do systematic reviews and meta-analysis, mostly in Python and R. From September 2025 to March 2026, I also reviewed medical LLM outputs for Outlier / Scale AI, grading answers for clinical accuracy and cardiology and ECG reasoning.</p>
+    <p>Alongside clinical work, I was an NIHR Academic Clinical Fellow working on cardiovascular outcomes and inequalities using real-world NHS data. I do systematic reviews and meta-analysis, mostly in Python and R. From September 2025 to March 2026, I also reviewed medical LLM outputs for Outlier / Scale AI, grading answers for clinical accuracy and cardiology and ECG reasoning.</p>
 
     <h3 id="research">Selected publications</h3>
     <ul class="pubs">
