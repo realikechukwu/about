@@ -1,7 +1,7 @@
 # Clinote
 ## An AI-assisted logbook for clinicians
 
-**Ikechukwu Chukwudi | 50 users as of October 2026**
+**Ikechukwu Chukwudi | 80 users as of October 2026**
 
 [Watch demo](https://about.realikechukwu.com/assets/clinote-demo.mp4) · [clinote.co](https://clinote.co/) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
 
