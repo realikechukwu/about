@@ -3,15 +3,15 @@
 
 **Ikechukwu Chukwudi | 50 users as of October 2026**
 
-[Watch demo](https://realikechukwu.github.io/about/#clinote-demo) · [clinote.co](https://clinote.co/) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
+[Watch demo](https://about.realikechukwu.com/assets/clinote-demo.mp4) · [clinote.co](https://clinote.co/) · [Portfolio](../README.md) · [LinkedIn](https://www.linkedin.com/in/ikechukwu-chukwudi/)
 
 ## Demo
 
 The demo shows dictation, reviewing the text, extraction into fields, saving, and the timeline.
 
-<a href="https://realikechukwu.github.io/about/#clinote-demo"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen" width="280"></a>
+<a href="https://about.realikechukwu.com/assets/clinote-demo.mp4"><img src="../assets/clinote-demo-poster.jpg" alt="Clinote structured-entry review screen" width="280"></a>
 
-[Watch in the portfolio](https://realikechukwu.github.io/about/#clinote-demo) · [Open the video directly](https://realikechukwu.github.io/about/assets/clinote-demo.mp4)
+[Watch the demo](https://about.realikechukwu.com/assets/clinote-demo.mp4)
 
 ## The problem
 

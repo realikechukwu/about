@@ -10,7 +10,7 @@ I build software for problems I run into at work. Day to day I'm a cardiology re
 
 | Project | What it is | Reach (Oct 2026) | Links |
 |---|---|---|---|
-| **Clinote** | AI-assisted logbook for clinicians. Next.js, FastAPI, PostgreSQL, OpenAI API | **50 users** | [Demo](https://realikechukwu.github.io/about/#clinote-demo) · [How it works](case-studies/clinote.md) · [clinote.co](https://clinote.co/) |
+| **Clinote** | AI-assisted logbook for clinicians. Next.js, FastAPI, PostgreSQL, OpenAI API | **50 users** | [Demo](https://about.realikechukwu.com/assets/clinote-demo.mp4) · [How it works](case-studies/clinote.md) · [clinote.co](https://clinote.co/) |
 | **Cardiology Research Digest** | Weekly email of new cardiology papers, found and summarised automatically | **70 subscribers** | [Landing page](https://digest.realikechukwu.com/) · [Sample issue](https://digest.realikechukwu.com/sample) · [How it works](case-studies/cardiology-digest.md) |
 
 Both codebases are private, so I've written up how each one works instead.
@@ -19,7 +19,7 @@ Both codebases are private, so I've written up how each one works instead.
 
 You describe a procedure or case in your own words, Clinote turns it into a structured log entry, and you check it before saving.
 
-**[Watch the demo](https://realikechukwu.github.io/about/#clinote-demo)**
+**[Watch the demo](https://about.realikechukwu.com/assets/clinote-demo.mp4)**
 
 I built it end to end with **Next.js, FastAPI and PostgreSQL**, using the OpenAI API for the extraction step, and went through a lot of prompt iterations to get the output structure consistent.
 
