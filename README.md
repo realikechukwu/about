@@ -55,7 +55,7 @@ A weekly email that pulls new cardiology papers from PubMed, filters them, and s
 
 - **Cardiology registrar**, North Cheshire and Mersey NHS Foundation Trust.
 - **Previously NIHR ACF in Internal Medicine/Cardiology**, University of Liverpool, working on cardiovascular outcomes and inequalities using real-world NHS data.
-- **Research:** systematic reviews and meta-analysis in Python and R.
+- **Research:** evidence synthesis and critical appraisal, with data analysis in Python and R.
 - **Qualifications:** MBBS (Ibadan), MRCP(UK).
 
 ## Get in touch
