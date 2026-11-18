@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="text-scale" content="scale">
 <meta name="description" content="Ikechukwu Chukwudi, NHS cardiology registrar. I build tools for clinicians (Clinote, MedPally, AI in Cardiology Decoded) and write for doctors coming to the UK.">
-<meta name="theme-color" content="#fbf8ef">
-<title>Ikechukwu Chukwudi's Home Page</title>
+<meta name="theme-color" content="#fbf8ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181613" media="(prefers-color-scheme: dark)">
+<title>Ikechukwu Chukwudi</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -20,190 +23,369 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@aikay_cee">
 <style>
-body{background:#fbf8ef;color:#1e1e1e;font:17px/1.6 Georgia,"Times New Roman",Times,serif;margin:0;padding:0 16px}
-.page{max-width:44em;margin:0 auto;padding:32px 0 40px}
-a{color:#1d3f9e}
-a:visited{color:#6a2c8e}
-a:hover{color:#b3141b}
-h1{font-weight:normal;font-size:2.1em;line-height:1.15;margin:0 0 .15em}
-.tagline{font-style:italic;color:#5a5a5a;margin:0 0 1.2em}
-.me{float:right;margin:4px 0 14px 22px}
-.photo{width:118px;height:138px;border:1px solid #9a9a9a;padding:3px;background:#fff;box-shadow:2px 2px 0 #e4dcc6}
-.photo div{width:100%;height:100%;background:#8b1a1a;color:#fbf8ef;display:flex;align-items:center;justify-content:center;font-size:44px;letter-spacing:.04em}
-h2{font-size:1.2em;font-weight:normal;font-variant:small-caps;letter-spacing:.07em;color:#8b1a1a;border-bottom:1px solid #dccba6;margin:2.1em 0 .7em;padding-bottom:3px}
-h3{font-size:1.05em;margin:1.4em 0 .3em}
-.lede{font-style:italic;color:#4a4a4a}
-.meta{font-size:14px;color:#6b6b6b;margin:.2em 0 .6em}
-.links{font-size:15px}
-.also{font-size:15.5px}
-.also li{margin-bottom:.35em}
-.pubs{font-size:15.5px;padding-left:1.2em}
-.pubs li{margin-bottom:.55em}
-.ecg{margin:26px 0 8px;line-height:0}
-.ecg svg{width:100%;height:26px;display:block}
-ul.toc{columns:2;column-gap:2em;font-size:15.5px;padding-left:1.2em;margin:.4em 0}
-dl.cv{margin:.4em 0;font-size:16px}
-dl.cv dt{float:left;width:6.5em;color:#6b6b6b;clear:left}
-dl.cv dd{margin:0 0 .35em 7.5em}
-.foot{font-size:13px;color:#777;margin-top:10px}
-.elsewhere{font-size:16px;margin:12px 0 4px;line-height:1.8}
-.elsewhere b{font-weight:normal;font-variant:small-caps;letter-spacing:.06em;color:#8b1a1a;margin-right:6px}
-.badges{margin:14px 0 6px}
-.badges span{display:inline-block;width:88px;height:31px;box-sizing:border-box;border:1px solid #444;margin:0 4px 4px 0;font:bold 9px/1.15 Verdana,Arial,sans-serif;text-align:center;padding-top:5px;vertical-align:top}
-.b1{background:#003366;color:#fff;font-size:8px !important;line-height:1.1 !important;padding-top:3px !important}
+:root{
+  --bg-light:#fbf8ef;
+  --bg-dark:#181613;
+  --text-light:#1e1e1e;
+  --text-dark:#ece6d8;
+  --muted-light:#5c5850;
+  --muted-dark:#aca494;
+  --accent-light:#8b1a1a;
+  --accent-dark:#e07a7a;
+  --rule-light:#dccba6;
+  --rule-dark:#3d372d;
+  --link-light:#1d3f9e;
+  --link-dark:#8fb3ff;
+  --visited-light:#6a2c8e;
+  --visited-dark:#c79cf2;
+  --hover-light:#b3141b;
+  --hover-dark:#ff9494;
+  --card-light:#ffffff;
+  --card-dark:#24201b;
+  --shadow-light:#e4dcc6;
+  --shadow-dark:#0d0c0a;
+  --photo-border-light:#9a9a9a;
+  --photo-border-dark:#5a5246;
+
+  --bg:var(--bg-light);
+  --text:var(--text-light);
+  --muted:var(--muted-light);
+  --accent:var(--accent-light);
+  --rule:var(--rule-light);
+  --link:var(--link-light);
+  --visited:var(--visited-light);
+  --hover:var(--hover-light);
+  --card:var(--card-light);
+  --shadow:var(--shadow-light);
+  --photo-border:var(--photo-border-light);
+
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:var(--bg-dark);
+    --text:var(--text-dark);
+    --muted:var(--muted-dark);
+    --accent:var(--accent-dark);
+    --rule:var(--rule-dark);
+    --link:var(--link-dark);
+    --visited:var(--visited-dark);
+    --hover:var(--hover-dark);
+    --card:var(--card-dark);
+    --shadow:var(--shadow-dark);
+    --photo-border:var(--photo-border-dark);
+  }
+}
+@supports (color:light-dark(white,black)){
+  :root{
+    --bg:light-dark(var(--bg-light),var(--bg-dark));
+    --text:light-dark(var(--text-light),var(--text-dark));
+    --muted:light-dark(var(--muted-light),var(--muted-dark));
+    --accent:light-dark(var(--accent-light),var(--accent-dark));
+    --rule:light-dark(var(--rule-light),var(--rule-dark));
+    --link:light-dark(var(--link-light),var(--link-dark));
+    --visited:light-dark(var(--visited-light),var(--visited-dark));
+    --hover:light-dark(var(--hover-light),var(--hover-dark));
+    --card:light-dark(var(--card-light),var(--card-dark));
+    --shadow:light-dark(var(--shadow-light),var(--shadow-dark));
+    --photo-border:light-dark(var(--photo-border-light),var(--photo-border-dark));
+  }
+}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font:1.0625rem/1.65 Georgia,"Times New Roman",Times,serif;
+  margin:0;
+  padding:0 1rem;
+  overflow-wrap:break-word;
+}
+.page{max-width:42rem;margin:0 auto;padding:2.25rem 0 2.75rem}
+.visually-hidden:where(:not(:focus-within,:active)){
+  position:absolute !important;
+  clip-path:inset(50%) !important;
+  overflow:hidden !important;
+  width:1px !important;
+  height:1px !important;
+  margin:-1px !important;
+  padding:0 !important;
+  border:0 !important;
+  white-space:nowrap !important;
+}
+.skip-link:focus{
+  position:fixed;
+  top:.75rem;
+  left:.75rem;
+  z-index:10;
+  background:var(--bg);
+  color:var(--text);
+  border:2px solid var(--accent);
+  padding:.35rem .65rem;
+  text-decoration:none;
+}
+a{color:var(--link);text-underline-offset:.16em}
+a:visited{color:var(--visited)}
+a:hover{color:var(--hover)}
+:where(a:any-link,summary,[tabindex]):focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+[id]{scroll-margin-top:1.25rem}
+h1,h2,h3{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+h1{font-weight:normal;font-size:clamp(1.75rem,1.35rem + 1.5vw,2.25rem);line-height:1.15;margin:0 0 .2rem}
+.tagline{font-style:italic;color:var(--muted);margin:0 0 1.25rem}
+.me{float:right;margin:.25rem 0 .9rem 1.35rem}
+.photo{
+  width:7.25rem;
+  aspect-ratio:118/138;
+  border:1px solid var(--photo-border);
+  padding:3px;
+  background:var(--card);
+  box-shadow:2px 2px 0 var(--shadow);
+}
+.photo div{
+  width:100%;
+  height:100%;
+  background:#8b1a1a;
+  color:#fbf8ef;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2.6rem;
+  letter-spacing:.04em;
+}
+h2{
+  font-size:1.18rem;
+  font-weight:normal;
+  font-variant:small-caps;
+  letter-spacing:.07em;
+  color:var(--accent);
+  border-bottom:1px solid var(--rule);
+  margin:2.25rem 0 .75rem;
+  padding-bottom:.2rem;
+}
+h3{font-size:1.05rem;margin:1.5rem 0 .35rem}
+.lede{font-style:italic;color:var(--muted);margin-top:.2rem}
+.meta{font-size:.875rem;color:var(--muted);margin:.25rem 0 .55rem}
+.links{font-size:.9375rem}
+.also{font-size:.96rem}
+.also li{margin-bottom:.4rem}
+.pubs{font-size:.96rem;padding-left:1.25rem}
+.pubs li{margin-bottom:.6rem}
+.principles{
+  margin:1.35rem 0 .25rem;
+  padding:.85rem 1.1rem;
+  border-left:2px solid var(--rule);
+}
+.principles h3{margin:0 0 .45rem;font-size:1rem;color:var(--accent);font-weight:normal;font-variant:small-caps;letter-spacing:.05em}
+.principles ul{margin:0;padding-left:1.15rem;font-size:.96rem}
+.principles li{margin-bottom:.3rem}
+.ecg{margin:1.75rem 0 .5rem;line-height:0}
+.ecg svg{width:100%;height:1.65rem;display:block}
+nav.toc{margin:1.1rem 0 0}
+ul.toc{
+  columns:2;
+  column-gap:2rem;
+  font-size:.96rem;
+  padding-left:1.2rem;
+  margin:.4rem 0;
+}
+ul.toc li{margin-bottom:.25rem;break-inside:avoid}
+dl.cv{
+  display:grid;
+  grid-template-columns:6.5em 1fr;
+  gap:.35rem 1rem;
+  margin:.5rem 0;
+  font-size:1rem;
+}
+dl.cv dt{color:var(--muted)}
+dl.cv dd{margin:0}
+footer{margin-top:.5rem}
+.foot{font-size:.8125rem;color:var(--muted);margin-top:.65rem}
+.elsewhere{font-size:1rem;margin:.75rem 0 .25rem;line-height:1.8}
+.elsewhere b{font-weight:normal;font-variant:small-caps;letter-spacing:.06em;color:var(--accent);margin-right:.35rem}
+.badges{margin:.9rem 0 .4rem}
+.badges span{
+  display:inline-block;
+  min-width:88px;
+  min-height:31px;
+  box-sizing:border-box;
+  border:1px solid #444;
+  margin:0 .25rem .25rem 0;
+  font:bold .5625rem/1.15 Verdana,Arial,sans-serif;
+  text-align:center;
+  padding:5px 4px 3px;
+  vertical-align:top;
+}
+.b1{background:#003366;color:#fff;font-size:.5rem !important;line-height:1.1 !important;padding-top:3px !important}
 .b2{background:#f2f2f2;color:#333}
-.b3{background:#8b1a1a;color:#ffd;font-size:8px !important;line-height:1.1 !important;padding-top:3px !important}
+.b3{background:#8b1a1a;color:#ffd;font-size:.5rem !important;line-height:1.1 !important;padding-top:3px !important}
 @media (max-width:560px){
-  body{font-size:16px}
-  .me{float:none;margin:0 0 14px}
+  .me{float:none;margin:0 0 .9rem}
   ul.toc{columns:1}
-  dl.cv dt{float:none;width:auto}
-  dl.cv dd{margin:0 0 .6em}
+  dl.cv{grid-template-columns:1fr;gap:.1rem}
+  dl.cv dd{margin-bottom:.55rem}
 }
 </style>
 </head>
 <body>
 <div class="page">
 
-<div class="me" aria-hidden="true">
-<div class="photo"><div>IC</div></div>
-</div>
+<header>
+  <a href="#main" class="skip-link visually-hidden">Skip to content</a>
 
-<h1>Ikechukwu Chukwudi</h1>
-<p class="tagline">Cardiology registrar in the NHS. I build tools for clinicians and write for doctors coming to the UK.</p>
+  <div class="me" aria-hidden="true">
+    <div class="photo"><div>IC</div></div>
+  </div>
 
-<p>Hello. I'm a doctor. Most days I'm on a cardiology ward or in clinic in the North West of England.</p>
+  <h1>Ikechukwu Chukwudi</h1>
+  <p class="tagline">NHS cardiology registrar. Builder of clinical tools, writer for doctors moving to the UK.</p>
 
-<p>Around that I do two things. I build software that helps clinicians log their training, keep up with the evidence and make sense of AI. And I write for doctors following the path I took, from medical school in Ibadan to the NHS: a blog since 2019, a book, and a YouTube channel.</p>
+  <p>Hello. Most days I'm on a cardiology ward or in clinic in the North West of England.</p>
 
-<p>This page is the short version of all of it. It's plain HTML on purpose.</p>
+  <p>Around the day job, I do two things: I build software that helps clinicians log their training, keep up with the evidence and make sense of AI; and I write for doctors following the path I took, from medical school in Ibadan to the NHS.</p>
 
-<ul class="toc">
-<li><a href="#logging">Logging and training</a></li>
-<li><a href="#evidence">Keeping up with the evidence</a></li>
-<li><a href="#ai">Making sense of AI</a></li>
-<li><a href="#how">How I build things</a></li>
-<li><a href="#writing">Writing and careers</a></li>
-<li><a href="#other">Other things I've built</a></li>
-<li><a href="#medicine">Medicine</a></li>
-<li><a href="#research">Research and publications</a></li>
-<li><a href="#cv">The CV version</a></li>
-<li><a href="#contact">Getting in touch</a></li>
-</ul>
+  <p>This page is the short version of all of it. It's plain HTML on purpose—fast, readable, and free of JavaScript.</p>
 
-<div class="ecg" aria-hidden="true"><svg viewBox="0 0 600 30" preserveAspectRatio="none"><polyline fill="none" stroke="#8b1a1a" stroke-width="1.4" vector-effect="non-scaling-stroke" points="0,20 250,20 258,16 266,20 282,20 287,23 294,2 301,28 307,20 326,20 340,13 354,20 600,20"/></svg></div>
+  <nav class="toc" aria-label="On this page">
+    <ul class="toc">
+      <li><a href="#tools">Clinical tools</a></li>
+      <li><a href="#writing">Writing and resources</a></li>
+      <li><a href="#medicine">Medicine and research</a></li>
+      <li><a href="#cv">Timeline</a></li>
+      <li><a href="#contact">Getting in touch</a></li>
+    </ul>
+  </nav>
+</header>
 
-<h2 id="logging">Logging and training</h2>
+<div class="ecg" aria-hidden="true"><svg viewBox="0 0 600 30" preserveAspectRatio="none"><polyline fill="none" stroke="currentColor" style="color:var(--accent)" stroke-width="1.4" vector-effect="non-scaling-stroke" points="0,20 250,20 258,16 266,20 282,20 287,23 294,2 301,28 307,20 326,20 340,13 354,20 600,20"/></svg></div>
 
-<h3 id="clinote">Clinote: a logbook you can talk to</h3>
-<p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end.</p>
-<p class="meta">Next.js, FastAPI, PostgreSQL, OpenAI API &middot; 50 users as of October 2026 &middot; anonymised training logs only</p>
-<p class="links"><a href="https://clinote.co/">clinote.co</a> &middot; <a href="assets/clinote-demo.mp4">watch the demo</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">how it works</a></p>
+<main id="main" tabindex="-1">
 
-<p class="also">Also under Clinote:</p>
-<ul class="also">
-<li><a href="https://echo.clinote.co/">Echo Companion</a>: a scan checklist on your phone while you do an echo, then a structured report at the workstation, with BSE normal ranges and pathways built in. Nothing you enter leaves the browser tab.</li>
-<li><a href="https://spin.clinote.co/">Handover Teaching Wheel</a>: spin it at the end of handover for a 90-second acute medicine teaching point.</li>
-<li><a href="https://web.clinote.co/">Systematic review webinar</a>: a free two-hour session on doing a systematic review, September 2026.</li>
-</ul>
+  <section>
+    <h2 id="tools">Clinical tools</h2>
+    <p class="lede">Most of what I build starts as a friction I ran into on the ward or at my desk.</p>
 
-<h2 id="evidence">Keeping up with the evidence</h2>
+    <h3 id="clinote">Clinote: a logbook you can talk to</h3>
+    <p>You describe a procedure or a case in your own words. Clinote turns it into a structured logbook entry. You read it, fix anything that's wrong, and save it. Nothing is saved until you've checked it. I designed and built it end to end.</p>
+    <p class="meta">Next.js, FastAPI, PostgreSQL, OpenAI API &middot; 50 users as of October 2026 &middot; anonymised training logs only</p>
+    <p class="links"><a href="https://clinote.co/">clinote.co</a> &middot; <a href="assets/clinote-demo.mp4">watch the demo</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/clinote.md">how it works</a></p>
 
-<h3 id="medpally">MedPally: research, easier to follow</h3>
-<p>MedPally grew out of the Cardiology Digest. You pick a specialty and the journals you care about, and it gives you a personal feed of new papers, each with a short summary. It pulls from PubMed on a schedule and works out which papers are relevant to you. It starts with cardiology, but adding a specialty is a data change, not new code.</p>
-<p class="meta">Django, htmx, PubMed, LLM summaries &middot; source code public to read</p>
-<p class="links"><a href="https://app.medpally.com/">app.medpally.com</a> &middot; <a href="https://medpally.com/">medpally.com</a></p>
+    <p class="also">Also under Clinote:</p>
+    <ul class="also">
+      <li><a href="https://echo.clinote.co/">Echo Companion</a>: a scan checklist on your phone while you do an echo, then a structured report at the workstation, with BSE normal ranges and pathways built in. Nothing you enter leaves the browser tab.</li>
+      <li><a href="https://spin.clinote.co/">Handover Teaching Wheel</a>: spin it at the end of handover for a 90-second acute medicine teaching point.</li>
+      <li><a href="https://web.clinote.co/">Systematic review webinar</a>: a free two-hour session on doing a systematic review, September 2026.</li>
+    </ul>
 
-<h3 id="digest">The Cardiology Digest: where it started</h3>
-<p>An email that goes out every Sunday with the week's new cardiology papers worth reading. It checks about 20 journals, filters on the strength of the evidence, and summarises each paper in plain clinical terms. Summaries come from the abstract only, in the same format every time. Readers mark what was useful, and that shapes the next issue.</p>
-<p class="meta">PubMed &rarr; evidence filter &rarr; LLM summary &rarr; email, on GitHub Actions &middot; 70 subscribers</p>
-<p class="links"><a href="https://digest.realikechukwu.com/">subscribe</a> &middot; <a href="https://digest.realikechukwu.com/sample">read a sample issue</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">how it works</a></p>
+    <h3 id="medpally">MedPally: keeping up with the evidence</h3>
+    <p>MedPally grew out of the Cardiology Digest. You pick a specialty and the journals you care about, and it gives you a personal feed of new papers, each with a short summary. It pulls from PubMed on a schedule and works out which papers are relevant to you. It starts with cardiology, but adding a specialty is a data change, not new code.</p>
+    <p class="meta">Django, htmx, PubMed, LLM summaries &middot; source code public to read</p>
+    <p class="links"><a href="https://app.medpally.com/">app.medpally.com</a> &middot; <a href="https://medpally.com/">medpally.com</a></p>
 
-<h3 id="find">MedPally Find</h3>
-<p>A free, hand-curated directory of tools, apps, courses and guidelines for cardiology and cardiac critical care. Anyone can suggest a resource, and every suggestion is reviewed before it goes up. The code is open source under the MIT licence.</p>
-<p class="links"><a href="https://find.medpally.com/">find.medpally.com</a> &middot; <a href="https://github.com/realikechukwu/medpally-find">source on GitHub</a></p>
+    <h3 id="digest">The Cardiology Digest: where it started</h3>
+    <p>An email that goes out every Sunday with the week's new cardiology papers worth reading. It checks about 20 journals, filters on the strength of the evidence, and summarises each paper in plain clinical terms. Summaries come from the abstract only, in the same format every time. Readers mark what was useful, and that shapes the next issue.</p>
+    <p class="meta">PubMed &rarr; evidence filter &rarr; LLM summary &rarr; email, on GitHub Actions &middot; 70 subscribers</p>
+    <p class="links"><a href="https://digest.realikechukwu.com/">subscribe</a> &middot; <a href="https://digest.realikechukwu.com/sample">read a sample issue</a> &middot; <a href="https://github.com/realikechukwu/about/blob/main/case-studies/cardiology-digest.md">how it works</a></p>
 
-<h2 id="ai">Making sense of AI</h2>
+    <h3 id="find">MedPally Find</h3>
+    <p>A free, hand-curated directory of tools, apps, courses and guidelines for cardiology and cardiac critical care. Anyone can suggest a resource, and every suggestion is reviewed before it goes up. The code is open source under the MIT licence.</p>
+    <p class="links"><a href="https://find.medpally.com/">find.medpally.com</a> &middot; <a href="https://github.com/realikechukwu/medpally-find">source on GitHub</a></p>
 
-<h3 id="aicardio">AI in Cardiology Decoded</h3>
-<p>A free, plain-language guide to machine learning for clinicians. Every term gets one line, one picture, one cardiology example and one warning. There are 12 chapters, 11 animated explainers and 5 interactive labs, from a decision tree you can grow to a sensitivity, specificity and AUC explorer. It's an independent study companion to the 2026 ESC scientific statement on AI in cardiology for non-experts.</p>
-<p class="links"><a href="https://aicardio.medpally.com/">aicardio.medpally.com</a></p>
+    <h3 id="aicardio">AI in Cardiology Decoded</h3>
+    <p>A free, plain-language guide to machine learning for clinicians. Every term gets one line, one picture, one cardiology example and one warning. There are 12 chapters, 11 animated explainers and 5 interactive labs, from a decision tree you can grow to a sensitivity, specificity and AUC explorer. It's an independent study companion to the 2026 ESC scientific statement on AI in cardiology for non-experts.</p>
+    <p class="links"><a href="https://aicardio.medpally.com/">aicardio.medpally.com</a></p>
 
-<h3 id="review">Reviewing medical AI</h3>
-<p>From September 2025 to March 2026 I reviewed medical LLM outputs for Outlier / Scale AI. I graded answers for clinical accuracy and completeness, including cardiology and ECG reasoning, and wrote feedback for the annotators.</p>
-<p class="links">Related reading: <a href="magnifica-humanitas-summary.html">Magnifica Humanitas in plain English</a>, my summary of Pope Leo XIV's 2026 encyclical on the human person in the age of AI.</p>
+    <aside class="principles" aria-labelledby="how">
+      <h3 id="how">How I build</h3>
+      <ul>
+        <li>The AI drafts and the clinician decides. Every Clinote entry is read by a person before it's saved.</li>
+        <li>Stay close to the source. Digest summaries use the abstract only, in a fixed format.</li>
+        <li>No patient identifiers. Clinote is for anonymised training logs, and Echo Companion stores nothing.</li>
+        <li>I use AI-assisted coding, and I'm responsible for every decision it touches.</li>
+      </ul>
+    </aside>
+  </section>
 
-<h2 id="how">How I build things</h2>
-<ul>
-<li>The AI drafts and the clinician decides. Every Clinote entry is read by a person before it's saved.</li>
-<li>Stay close to the source. Digest summaries use the abstract only, in a fixed format.</li>
-<li>No patient identifiers. Clinote is for anonymised training logs, and Echo Companion stores nothing.</li>
-<li>I use AI-assisted coding, and I'm responsible for every decision it touches.</li>
-</ul>
+  <section>
+    <h2 id="writing">Writing and resources</h2>
+    <p class="lede">The other half of my work is for doctors and healthcare workers trying to find their footing.</p>
 
-<h2 id="writing">Writing and careers</h2>
-<p class="lede">The other half of what I do is for doctors and other healthcare workers trying to find their way.</p>
+    <h3 id="blog">The blog</h3>
+    <p>I've written at <a href="https://blog.realikechukwu.com/">blog.realikechukwu.com</a> since 2019, and there are 57 posts so far. A lot of it is practical guidance for international doctors coming to the UK: PLAB, GMC registration, finding a first NHS job, visas and settling in. There's also writing on medicine in Nigeria and the UK, NHS training and, lately, cardiology research. A few to start with:</p>
+    <ul class="also">
+      <li><a href="https://blog.realikechukwu.com/blog/plab-2-journey-of-a-comui-graduate/">PLAB 2 journey of a COMUI graduate</a></li>
+      <li><a href="https://blog.realikechukwu.com/blog/welcome-to-the-uk-medical-register-a-gmc-registration-guide/">Welcome to the UK Medical Register: a GMC registration guide</a></li>
+      <li><a href="https://blog.realikechukwu.com/blog/improving-your-job-search-on-nhs-jobs-as-an-img/">Improving your job search on NHS Jobs as an IMG</a></li>
+      <li><a href="https://blog.realikechukwu.com/blog/what-i-wish-i-knew-about-internal-medicine-training/">What I wish I knew about Internal Medicine Training</a></li>
+      <li><a href="https://blog.realikechukwu.com/blog/keeping-up-with-cardiology-research-without-reading-everything/">Keeping up with cardiology research without reading everything</a></li>
+    </ul>
+    <p class="links">Also written: <a href="magnifica-humanitas-summary.html">Magnifica Humanitas in plain English</a>, my summary of Pope Leo XIV's 2026 encyclical on the human person in the age of AI.</p>
 
-<h3 id="blog">The blog</h3>
-<p>I've written at <a href="https://blog.realikechukwu.com/">blog.realikechukwu.com</a> since 2019, and there are 57 posts so far. A lot of it is practical guidance for international doctors coming to the UK: PLAB, GMC registration, finding a first NHS job, visas and settling in. There's also writing on medicine in Nigeria and the UK, NHS training and, lately, cardiology research. A few to start with:</p>
-<ul class="also">
-<li><a href="https://blog.realikechukwu.com/blog/plab-2-journey-of-a-comui-graduate/">PLAB 2 journey of a COMUI graduate</a></li>
-<li><a href="https://blog.realikechukwu.com/blog/welcome-to-the-uk-medical-register-a-gmc-registration-guide/">Welcome to the UK Medical Register: a GMC registration guide</a></li>
-<li><a href="https://blog.realikechukwu.com/blog/improving-your-job-search-on-nhs-jobs-as-an-img/">Improving your job search on NHS Jobs as an IMG</a></li>
-<li><a href="https://blog.realikechukwu.com/blog/what-i-wish-i-knew-about-internal-medicine-training/">What I wish I knew about Internal Medicine Training</a></li>
-<li><a href="https://blog.realikechukwu.com/blog/keeping-up-with-cardiology-research-without-reading-everything/">Keeping up with cardiology research without reading everything</a></li>
-</ul>
+    <h3 id="book">The book</h3>
+    <p><a href="https://blog.realikechukwu.com/pre-order-flourishing-in-the-uk/"><cite>Flourishing in the UK: An Immigrant Doctor's Guide</cite></a> is a step-by-step guide to moving to the UK, doing well in your job, and building a good life here. It's out in paperback.</p>
 
-<h3 id="book">The book</h3>
-<p><a href="https://blog.realikechukwu.com/pre-order-flourishing-in-the-uk/"><cite>Flourishing in the UK: An Immigrant Doctor's Guide</cite></a> is a step-by-step guide to moving to the UK, doing well in your job, and building a good life here. It's out in paperback.</p>
+    <h3 id="youtube">YouTube</h3>
+    <p>Videos on medicine, research and productivity at <a href="https://www.youtube.com/@real_ikechukwu">youtube.com/@real_ikechukwu</a>.</p>
 
-<h3 id="youtube">YouTube</h3>
-<p>Videos on medicine, research and productivity at <a href="https://www.youtube.com/@real_ikechukwu">youtube.com/@real_ikechukwu</a>.</p>
+    <h3 id="jobbermed">JobberMed</h3>
+    <p>A jobs board for healthcare workers in Nigeria and across Africa. It gathers roles from five job sites alongside jobs posted directly by approved recruiters, and emails subscribers a weekly digest. CV Match scores your CV against a specific advert and rewrites it to fit.</p>
+    <p class="meta">React, Supabase, Python scrapers &middot; 400 subscribers</p>
+    <p class="links"><a href="https://jobbermed.com/">jobbermed.com</a> &middot; <a href="https://cv.jobbermed.com/">CV Match</a></p>
 
-<h3 id="jobbermed">JobberMed</h3>
-<p>A jobs board for healthcare workers in Nigeria and across Africa. It gathers roles from five job sites alongside jobs posted directly by approved recruiters, and emails subscribers a weekly digest. CV Match scores your CV against a specific advert and rewrites it to fit.</p>
-<p class="meta">React, Supabase, Python scrapers &middot; 400 subscribers</p>
-<p class="links"><a href="https://jobbermed.com/">jobbermed.com</a> &middot; <a href="https://cv.jobbermed.com/">CV Match</a></p>
+    <h3 id="other">Outside medicine</h3>
+    <ul class="also">
+      <li><a href="https://xploreliverpool.co.uk/">XploreLiverpool</a>: music, food, culture and community events across Liverpool and Wirral.</li>
+    </ul>
+  </section>
 
-<h2 id="other">Other things I've built</h2>
-<ul class="also">
-<li><a href="https://xploreliverpool.co.uk/">XploreLiverpool</a>: music, food, culture and community events across Liverpool and Wirral.</li></ul>
+  <section>
+    <h2 id="medicine">Medicine and research</h2>
+    <p>Medicine is the day job behind all of this. I trained at the University of Ibadan, came to the UK through PLAB, and hold the MRCP(UK). I've worked in the NHS for five years across acute medicine and cardiology, and I'm now a cardiology registrar at North Cheshire and Mersey NHS Foundation Trust.</p>
 
-<h2 id="medicine">Medicine</h2>
-<p>Medicine is the day job, and it's the reason for everything else on this page. I trained at the University of Ibadan, came to the UK through PLAB, and hold the MRCP(UK). I've worked in the NHS for five years, across acute medicine and cardiology, and I'm now a cardiology registrar at North Cheshire and Mersey NHS Foundation Trust.</p>
-<p>Most of the tools on this page started as problems I ran into at work.</p>
+    <p>Alongside clinical work, I was an NIHR Academic Clinical Fellow working on cardiovascular outcomes and inequalities using real-world NHS data, and I've been an Honorary Clinical Fellow at the University of Liverpool since 2023. I do systematic reviews and meta-analysis, mostly in Python and R. From September 2025 to March 2026, I also reviewed medical LLM outputs for Outlier / Scale AI, grading answers for clinical accuracy and cardiology and ECG reasoning.</p>
 
-<h2 id="research">Research and publications</h2>
-<p>I was an NIHR Academic Clinical Fellow, working on cardiovascular outcomes and inequalities using real-world NHS data. I've been an Honorary Clinical Fellow at the University of Liverpool since 2023. I do systematic reviews and meta-analysis, mostly in Python and R.</p>
-<p>Selected publications:</p>
-<ul class="pubs">
-<li><b>Chukwudi IR</b>, Nwabueze KK, Olanrewaju A. A systematic review of the current challenges of bedside teaching for medical students in the UK. <i>BMC Medical Education</i>. 2026. <a href="https://doi.org/10.1186/s12909-026-09931-z">doi:10.1186/s12909-026-09931-z</a></li>
-<li>Ekhelikar S, <b>Chukwudi I</b>, Lewis G, Lagan J. Post-traumatic pericarditis following penetrating injury to the heart: a case report. <i>The International Journal of Cardiovascular Imaging</i>. 2026. <a href="https://doi.org/10.1007/s10554-026-03786-7">doi:10.1007/s10554-026-03786-7</a></li>
-<li><b>Chukwudi I</b>. UKFPO F2 Standalone: a brief guide. <i>Annals of Medicine and Surgery</i>. 2022. <a href="https://doi.org/10.1016/j.amsu.2022.104594">doi:10.1016/j.amsu.2022.104594</a></li>
-</ul>
-<p class="links">Everything else: <a href="https://orcid.org/0000-0002-0646-5031">ORCID</a> &middot; <a href="https://www.researchgate.net/profile/Ikechukwu-Chukwudi">ResearchGate</a></p>
+    <h3 id="research">Selected publications</h3>
+    <ul class="pubs">
+      <li><b>Chukwudi IR</b>, Nwabueze KK, Olanrewaju A. A systematic review of the current challenges of bedside teaching for medical students in the UK. <i>BMC Medical Education</i>. 2026. <a href="https://doi.org/10.1186/s12909-026-09931-z">doi:10.1186/s12909-026-09931-z</a></li>
+      <li>Ekhelikar S, <b>Chukwudi I</b>, Lewis G, Lagan J. Post-traumatic pericarditis following penetrating injury to the heart: a case report. <i>The International Journal of Cardiovascular Imaging</i>. 2026. <a href="https://doi.org/10.1007/s10554-026-03786-7">doi:10.1007/s10554-026-03786-7</a></li>
+      <li><b>Chukwudi I</b>. UKFPO F2 Standalone: a brief guide. <i>Annals of Medicine and Surgery</i>. 2022. <a href="https://doi.org/10.1016/j.amsu.2022.104594">doi:10.1016/j.amsu.2022.104594</a></li>
+    </ul>
+    <p class="links">Full record: <a href="https://orcid.org/0000-0002-0646-5031">ORCID</a> &middot; <a href="https://www.researchgate.net/profile/Ikechukwu-Chukwudi">ResearchGate</a></p>
+  </section>
 
-<h2 id="cv">The CV version</h2>
-<dl class="cv">
-<dt>2026&ndash;</dt><dd>Cardiology Registrar, North Cheshire and Mersey NHS Foundation Trust</dd>
-<dt>2025&ndash;26</dt><dd>Medical LLM reviewer, Outlier / Scale AI</dd>
-<dt>2023&ndash;</dt><dd>Honorary Clinical Fellow, University of Liverpool</dd>
-<dt>Earlier</dt><dd>NIHR Academic Clinical Fellow, cardiovascular outcomes and inequalities</dd>
-<dt>Exams</dt><dd>MRCP(UK)</dd>
-<dt>Degree</dt><dd>MBBS, University of Ibadan</dd>
-</dl>
+  <section>
+    <h2 id="cv">Timeline</h2>
+    <dl class="cv">
+      <dt>2026&ndash;</dt><dd>Cardiology Registrar, North Cheshire and Mersey NHS Foundation Trust</dd>
+      <dt>2025&ndash;26</dt><dd>Medical LLM reviewer, Outlier / Scale AI</dd>
+      <dt>2023&ndash;</dt><dd>Honorary Clinical Fellow, University of Liverpool</dd>
+      <dt>Earlier</dt><dd>NIHR Academic Clinical Fellow, cardiovascular outcomes and inequalities</dd>
+      <dt>Exams</dt><dd>MRCP(UK)</dd>
+      <dt>Degree</dt><dd>MBBS, University of Ibadan</dd>
+    </dl>
+  </section>
 
-<h2 id="contact">Getting in touch</h2>
-<p>The best way to reach me is a <a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">message on LinkedIn</a>. I'm happy to demo Clinote or talk through how any of these projects work. I'm based in Liverpool.</p>
+  <section>
+    <h2 id="contact">Getting in touch</h2>
+    <p>The best way to reach me is a <a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">message on LinkedIn</a>. I'm happy to demo Clinote or talk through how any of these projects work. I'm based in Liverpool.</p>
+  </section>
 
-<div class="ecg" aria-hidden="true"><svg viewBox="0 0 600 30" preserveAspectRatio="none"><polyline fill="none" stroke="#8b1a1a" stroke-width="1.4" vector-effect="non-scaling-stroke" points="0,20 250,20 258,16 266,20 282,20 287,23 294,2 301,28 307,20 326,20 340,13 354,20 600,20"/></svg></div>
+</main>
 
-<p class="elsewhere"><b>Find me on</b> <a href="https://blog.realikechukwu.com/">Blog</a> &middot; <a href="https://www.youtube.com/@real_ikechukwu">YouTube</a> &middot; <a href="https://x.com/aikay_cee">X / Twitter</a> &middot; <a href="https://github.com/realikechukwu">GitHub</a> &middot; <a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">LinkedIn</a> &middot; <a href="https://orcid.org/0000-0002-0646-5031">ORCID</a> &middot; <a href="https://www.researchgate.net/profile/Ikechukwu-Chukwudi">ResearchGate</a></p>
+<div class="ecg" aria-hidden="true"><svg viewBox="0 0 600 30" preserveAspectRatio="none"><polyline fill="none" stroke="currentColor" style="color:var(--accent)" stroke-width="1.4" vector-effect="non-scaling-stroke" points="0,20 250,20 258,16 266,20 282,20 287,23 294,2 301,28 307,20 326,20 340,13 354,20 600,20"/></svg></div>
 
-<div class="badges" aria-hidden="true">
-<span class="b1">NOT<br>HAND-WRITTEN<br>HTML</span><span class="b2">NO COOKIES<br>NO TRACKING</span><span class="b3">BEST VIEWED<br>WITH ANY<br>BROWSER</span>
-</div>
-<p class="foot">Last modified: 18 November 2026 &middot; &copy; Ikechukwu Chukwudi</p>
+<footer>
+  <p class="elsewhere"><b>Find me on</b> <a href="https://blog.realikechukwu.com/">Blog</a> &middot; <a href="https://www.youtube.com/@real_ikechukwu">YouTube</a> &middot; <a href="https://x.com/aikay_cee">X / Twitter</a> &middot; <a href="https://github.com/realikechukwu">GitHub</a> &middot; <a href="https://www.linkedin.com/in/ikechukwu-chukwudi/">LinkedIn</a> &middot; <a href="https://orcid.org/0000-0002-0646-5031">ORCID</a> &middot; <a href="https://www.researchgate.net/profile/Ikechukwu-Chukwudi">ResearchGate</a></p>
+
+  <div class="badges" aria-hidden="true">
+    <span class="b1">NOT<br>HAND-WRITTEN<br>HTML</span><span class="b2">NO COOKIES<br>NO TRACKING</span><span class="b3">BEST VIEWED<br>WITH ANY<br>BROWSER</span>
+  </div>
+  <p class="foot">Last modified: 18 November 2026 &middot; &copy; Ikechukwu Chukwudi</p>
+</footer>
 
 </div>
 </body>
